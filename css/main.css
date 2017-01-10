@@ -1,0 +1,603 @@
+/* Copyright (c) 2015-2016 Xinyu Li*/
+
+
+/* #Basic elements
+================================================== */
+@font-face {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Yrsa', serif;
+}
+
+@font-face {
+	font-family: 'Arvo', serif;
+}
+
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	color: #4A4A4A;
+	-webkit-font-smoothing: antialiased;
+	margin:0;
+    padding: 0;
+}
+
+a {
+	color: #313131;
+	-webkit-transition: color 0.2s;
+	-moz-transition:    color 0.2s;
+	-ms-transition:     color 0.2s;
+	-o-transition:      color 0.2s;
+	transition:         color 0.2s;
+}
+
+a:hover {	
+	color: #FF2851; 
+}
+
+body {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+button {
+
+	background: #FF2851;
+	border: solid 2px #FF2851;
+	border-radius: 24px;
+	color: #FFFFFF;
+	display: block;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 2.4px;
+	margin: 30px auto 50px 0px;
+	opacity: 1;
+	transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -webkit-transition: opacity .35s ease-in-out;
+	padding: 10px 20px 10px 20px;
+	width: 170px;
+
+}
+
+button:hover {
+	color: #FF2851;
+	background: #FFFFFF;
+}
+
+.button a {
+	text-decoration: none;
+}
+
+h1 {
+/*case study titles*/
+/*index*/
+	font-family: Arvo;
+	font-size: 25px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	line-height: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+h2 {
+/*case study subtitle*/
+	color: #ffffff; 
+	font-family: Arvo;
+	letter-spacing: 0px; 
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h3 {
+/*index subtitle*/
+/*work intro titles*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	font-size: 18px;
+}
+
+h4 {
+/*index case study titles*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	color: #4F4F4F;
+	font-size: 24px;
+}
+
+h5 {
+/*index case study roles*/
+/*"View case study"*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	color: #FF2851;
+	font-size: 18px;
+}
+
+h9 {	
+/* Perpendicular title text for case study previews on index.html */
+	color: #fff;
+	font-family: Arvo;
+	font-size:30px;
+	position: absolute;
+	right: 13px;
+	top: 80px;
+}
+
+
+iframe {
+	display: block;
+	padding-bottom: 20px;
+	width: 90%;
+}
+
+p {
+	font-family: Open Sans;
+	color: #4F4F4F;
+	font-size: 15px;
+	display: block;
+	text-align: justify;
+}
+
+
+/* #Generic styles
+================================================== */
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.caption {
+	color: #aaa;
+	font-family: Circular;
+	font-size: 14px;
+	margin-top: -20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.full_background {
+	background-size: cover;
+	display: inline-block;
+	height: auto;
+	margin: 30px auto 30px auto;
+	width: 100%;
+}
+
+.full_background.intro{
+	margin: 0 auto 0 auto;
+	padding-bottom: 70px;
+}
+
+.img_padding {
+	margin: 30px auto 30px auto;
+}
+
+.img_padding_small {
+	margin: 15px auto 30px auto;
+}
+
+.iphone {
+	max-width: 95%;
+}
+
+.full-width {
+	box-sizing: border-box; 
+ 	max-width: 100%;
+}
+
+
+/* #subnav
+================================================== */
+
+.subnav{
+	width: 100%;
+	margin: 0px;
+}
+
+li {
+	font-family: Montserrat;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: 11%;
+}
+
+ul {
+	background-color: #fff;
+	margin: 0px, 10%;
+	text-align: center;
+	padding-top:20px;
+}
+
+ul a {
+	color: #c3c3c3;
+	text-decoration: none;
+}
+
+#nav {
+	background-color: #fff;
+/*	width: 100%;*/
+	z-index: 150;
+}
+
+#nav a:hover,	
+#nav a.current {
+	color: #313131;
+	border-color: #313131;
+	border-style: solid;
+	border-width: 0 0 2px;
+	padding-bottom: 15px;
+}
+
+.main-nav-scrolled {
+  position: fixed;
+  top: 0;
+}
+
+.sticky_fix {
+	padding-top: 54px;
+}
+
+
+/*=============================*/
+
+
+.margin_bottom {
+	margin-bottom: 0px;
+}
+
+.margin_top {
+	margin-top: -10px;
+}
+
+/*nav*/
+
+nav {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 1px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	border-color: #FF2851;
+	border-style: solid;
+	border-width: 0 0 0px;
+	box-shadow: inset 0 -4px 0 #FF2851;
+	color: inherit;
+	transition: .5s ease-in-out;	
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+}
+
+.nav_current {
+	border-color: #FF2851;
+	border-style: solid;
+	border-width: 0 0 0px;
+	box-shadow: inset 0 -4px 0 #FF2851;
+	color: inherit;
+}
+
+
+/*some elements*/
+
+.line {
+	background-color: #EDEDED;
+	height: 1px;
+	margin-top: 10px;
+}
+
+.division {
+	background-color: #EDEDED;
+	height: 2px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.social {
+	float: left;
+	padding-top: 20px;
+}
+
+.social img {
+	float: left;
+	padding: 0px 32px 0px 0px;
+}
+
+.spacer {
+	height: 100px;
+}
+
+.spacer_bottom {
+	padding-bottom: 15px;
+}
+
+.spacer_small {
+	height: 50px;
+}
+
+.spacer_top {
+	padding-top: 15px;
+}
+
+.banner_image {
+	display: flex;
+	padding-top: 35px;
+	width: 100%;
+}
+
+/*preview===================*/
+
+.preview {	/* Case study previews on index.html and link previews in readmore */
+	margin-top: 0px;
+	opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    position: relative;
+}
+
+.preview:hover {
+	opacity: 1;
+}
+
+.sp {
+	box-sizing: border-box; 
+ 	max-width: 100%;
+}
+
+
+/* #Scroll to top icon
+================================================== */
+
+.scrollToTop {
+	width:40px; 
+	height:5px;
+	padding:10px; 
+	position:fixed;
+	bottom:50px;
+	right:30px;
+	display:none;
+	background: url('../images/scroll_icon.png') no-repeat;
+	background-size: 50%;
+}
+
+
+/* #Footer
+================================================== */
+
+footer {
+	margin: auto;
+	padding-bottom: 100px;
+	width: 230px;
+}
+
+footer #copyright {
+	color: #4f4f4f;
+	display: block;
+	text-align: center;
+	font-family: yrsa;
+	margin: 10px auto 0px auto;
+}
+
+footer img {
+	float: left;
+	opacity: 0.6;
+	padding: 0px 16px;
+}
+
+footer img:hover{
+	opacity: 1;
+	transition: .25s ease-in-out;	
+	-moz-transition: opacity 2.5s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;*
+}
+
+/* #Work
+================================================== */
+
+#preview4 {
+	position: relative;
+}
+
+/* #Index
+================================================== */
+
+.projectthumbnail{
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+.row.group.index{
+	padding: 30px 0px;
+}
+
+.projectdescription{
+	margin: 20px auto;
+	margin-right: 20px;
+	font-size: 15px;
+	letter-spacing: 0.2px;
+}
+
+.full_background.index {
+	background-image: url("../images/index.jpg");
+}
+
+
+/* #About
+================================================== */
+#about{
+	margin-top: 60px;
+	text-align: left;
+}
+
+
+/*qscmobile=======================================================*/
+
+.full_background.tide {
+	background-color: #F7F6F4;
+}
+
+.banner_tide {
+	background-color: #85D3E5;
+	background-size: cover;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.container.tide a {
+	color: #313131;
+	-webkit-transition: color 0.2s;
+	-moz-transition:    color 0.2s;
+	-ms-transition:     color 0.2s;
+	-o-transition:      color 0.2s;
+	transition:         color 0.2s;
+}
+
+.container.tide a:hover {	
+	color: #85D3E5; 
+}
+
+.container.tide h1{
+	color: #85D3E5;
+}
+
+.four.coulunms.tide{
+	float: center;
+}
+
+/**/
+
+/* #Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+	* {
+	    margin:0;
+	    padding: 0;
+	}
+
+	.subnav{
+		display: none;
+	}
+
+	.line {
+		display: none;
+	}
+
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.row.group.index{
+		padding-bottom: 0px;
+	}
+
+	h1 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	h4 {	/* Used for feature titles in case studies */
+		font-family: CircularMedium;
+		font-size: 36px;
+		padding-bottom: 25px;
+		padding-top: 35px;
+		text-align: center;
+	}
+
+	p{
+		text-align: left;
+	}
+
+	.readmore img {
+		float: left;
+		width: 100%;
+	}
+
+	.projectdescription{
+		width: 80%;
+		margin: auto;
+	}
+
+	.scrollToTop {
+		bottom:25px;
+		right:5px;
+	}
+
+	.spacer {
+		height: 80px;
+	}
+
+	.subtitle {
+		font-size: 18px;
+		padding-top: 5px;
+	}
+
+}
+
+/* #Small Devices */
+@media only screen and (max-width: 767px) {
+
+
+	p{
+		text-align: left;
+	}
+
+	.subnav{
+		display: none;
+	}
+	
+	.line {
+		display: none;
+	}
+
+	.projectdescription{
+		width: 90%;
+		margin: auto;
+	}
+
+	.row.group.index{
+		padding-bottom: 0px;
+	}
+
+	.social {
+		display: none;
+	}
+}
+
+/* #Larger than desktop */
+@media (max-width: 1200px) {
+
+/*	ul {
+		display: none;
+	}*/
+	.subnav h4 {
+		margin-top: 50px;
+	}
+}
+
+}
