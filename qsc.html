@@ -77,10 +77,10 @@
 <!-- sub-navigation -->
   <div id="nav" class="subnav">
       <ul>
-        <li id="s1"><a href="#" data-scroll="s1">INTRODUCTION</a></li>
-        <li id="s2"><a href="#" data-scroll="s2">RESEARCH</a></li>
+        <li id="s1"><a href="#" data-scroll="s1">RESEARCH</a></li>
+        <li id="s2"><a href="#" data-scroll="s2">ROADMAP</a></li>
         <li id="s3"><a href="#" data-scroll="s3">INTERACTION</a></li>
-        <li id="s4"><a href="#" data-scroll="s4">FINALIZATION</a></li>
+        <li id="s4"><a href="#" data-scroll="s4">RESULTS</a></li>
         <li id="s5"><a href="#" data-scroll="s5">AFTERWORD</a></li>
       </ul>
     <div class="line" style="margin-top: 3px;"></div>
@@ -93,23 +93,23 @@
   <div class="container tide">
     <div class="row group">
       <div class="offset-by-two twelve columns">
-        <h3>
+        <h4>
           <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;"> Duration
-        </h3>
+        </h4>
         <p>
         2014-2015 @ QSC ( Student Portal of Zhejiang University )<br>
         <a href="https://itunes.apple.com/app/qiu-shi-chaomobile/id583334920" target="_blank">Check it out on App Store <img src="images/link.svg" width="10" alt="(External link)" /></a>
         </p>
-        <h3>
+        <h4>
           <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;"> My Role
-        </h3>
+        </h4>
         <p>
           Design Lead, UX Researcher, UX Designer. As the Design Lead, I conducted user research. Based on competitive analysis and data analysis, I defined product features and designed the interaction.
           <!-- Need to be edited -->
         </p>
-        <h3>
+        <h4>
           <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;">Methods and Tools
-        </h3>
+        </h4>
         <p>
           Interview, Competitive Analysis, Data Analytics, Wireframing, Prototyping, Sketch, Invision
         </p>
@@ -122,11 +122,9 @@
   <div class="container tide">
     <div class="row group">
     	<div class="offset-by-two twelve columns">
-    	<section id="s1" data-anchor="s1">`
-        <h1>Introduction</h1>
-        </section>
         <p>
-        From 2013 to 2015, I worked at QSC, the student portal of Zhejiang University. As the design lead, I and my team designed products and services to provide thousands of students the ultimate campus experience. In 2014, we handled a product audit and redesign.
+        <br><br>
+        From 2013 to 2015, I worked at QSC, the student portal of Zhejiang University. As the design lead, I and my team designed products and services to provide thousands of students the ultimate campus experience. In 2014, we handled a product audit of our main four products and redesigned Mobile, the core product of us.
         <br>
         </p>
       </div>
@@ -141,6 +139,7 @@
     </div>
   </div>
 
+
 <!--   <div class="container tide">
     <div class="row group">
       <div class="offset-by-two twelve columns">
@@ -154,14 +153,14 @@
   <div class="container tide">
     <div class="row group">
     	<div class="offset-by-two twelve columns">
-    	<section id="s2" data-anchor="s2">`
-        <h1>Research</h1>
+    	<section id="s1" data-anchor="s1">`
+        <h1>RESEARCH</h1>
         </section>
-        <h3>Problems</h3>
+        <h2>#1. Problems</h2>
+        <h3>Frustrated with cumbersome websites</h3>
         <p>
-        As students of Zhejiang University, they waste lots of time on checking plenty of information like courses, exams, homeworks, labs, school bus and exams from several place. Too much important information makes school life cumbersome.
+          Students in Zhejiang University are frustrated with the cumbersome process of accessing many different websites to obtain the information that they need for school. Courses, exams, homework, labs, school bus information and exam date are all at different places. They either waste time checking all of them, or get lost.
         <br>
-<!--         need to be edited -->
         </p>
       </div>
     </div>
@@ -170,23 +169,20 @@
   <div class="container tide">
     <div class="row group">
       <div class="sixteen columns">
-      <img src="images/qscproducts.png" class="full-width img_padding">
+      <img src="images/qscproblems.png" class="full-width img_padding">
       </div>
     </div>
   </div>
-
 
   <div class="container tide">
     <div class="row group">
-    	<div class="offset-by-two twelve columns">
-        <h3>Competitive Analysis</h3>
-        <p>
-        From 2013 to 2015, I worked at QSC, the student portal of Zhejiang University. As the design lead, I and my team designed products and services to provide thousands of students the ultimate campus experience. In 2014, we handled a product audit and redesign.
-        <br>
-        </p>
+      <div class="offset-by-two twelve columns">
+        <h3>Missing fascinating on-campus events</h3>
+        <P>
+          With Renren (the social network once lauded as “China’s Facebook”) reaching its vanishing point, the most important channel to spread information about on-campus events was cut off.
+        </P>
+        
       </div>
-    </div>
-  </div>
 
 
 <!-- division -->
@@ -256,10 +252,10 @@
 
         $(window).scroll(function() {
             var windscroll = $(window).scrollTop();
-            if (windscroll >= 1160 && windscroll <= 1830) {
+            if (windscroll >= 1160 && windscroll <= 5000) {
                 $('#s2 a, #s3 a, #s4 a, #s5 a').removeClass('current');
                 $('#s1 a').addClass('current');
-            } else if (windscroll >= 1830 && windscroll <= 6300) {
+            } else if (windscroll >= 5000 && windscroll <= 6300) {
                 $('#s1 a, #s3a, #s4 a, #s5 a').removeClass('current');
                 $('#s2 a').addClass('current');
             } else if (windscroll >= 6300 && windscroll <= 8700) {

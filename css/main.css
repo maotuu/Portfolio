@@ -102,24 +102,16 @@ h2 {
 }
 
 h3 {
-/*index subtitle*/
 /*work intro titles*/
 	font-family: Arvo;
 	letter-spacing: 0px;
 	font-size: 18px;
 }
 
-h4 {
-/*index case study titles*/
-	font-family: Arvo;
-	letter-spacing: 0px;
-	color: #4F4F4F;
-	font-size: 24px;
-}
-
 h5 {
 /*index case study roles*/
 /*"View case study"*/
+/*about*/
 	font-family: Arvo;
 	letter-spacing: 0px;
 	color: #FF2851;
@@ -130,9 +122,9 @@ h9 {
 /* Perpendicular title text for case study previews on index.html */
 	color: #fff;
 	font-family: Arvo;
-	font-size:30px;
+	font-size:25px;
 	position: absolute;
-	right: 13px;
+	right: 15px;
 	top: 80px;
 }
 
@@ -454,6 +446,41 @@ footer img:hover{
 	text-align: left;
 }
 
+/*Projects
+===================================================================*/
+.wrapper h1{
+/*Heading1*/
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 28px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.wrapper h2{
+/*heading2*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	font-size: 18px;
+	text-align: left;
+	color: #FF2851;
+    margin-bottom: -15px;
+}
+
+.wrapper h3{
+/*emphasize*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	color: #4F4F4F;
+	font-size: 35px;
+}
+
+.wrapper h4{
+/*titles in intro*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	font-size: 18px;
+}
 
 /*qscmobile=======================================================*/
 
@@ -519,14 +546,6 @@ footer img:hover{
 	h1 {
 		font-size: 26px;
 		line-height: 36px;
-	}
-
-	h4 {	/* Used for feature titles in case studies */
-		font-family: CircularMedium;
-		font-size: 36px;
-		padding-bottom: 25px;
-		padding-top: 35px;
-		text-align: center;
 	}
 
 	p{
