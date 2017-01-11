@@ -9,10 +9,6 @@
 }
 
 @font-face {
-	font-family: 'Yrsa', serif;
-}
-
-@font-face {
 	font-family: 'Arvo', serif;
 }
 
@@ -164,7 +160,7 @@ p {
 	text-align: center;
 }
 
-.full_background {
+.background {
 	background-size: cover;
 	display: inline-block;
 	height: auto;
@@ -172,7 +168,7 @@ p {
 	width: 100%;
 }
 
-.full_background.intro{
+.background.intro{
 	margin: 0 auto 0 auto;
 	padding-bottom: 70px;
 }
@@ -263,7 +259,7 @@ ul a {
 
 nav {
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 13px;
 	letter-spacing: 1px;
 	padding-top: 30px;
@@ -343,17 +339,14 @@ nav a:hover {
 
 /*preview===================*/
 
-.preview {	/* Case study previews on index.html and link previews in readmore */
+.previewqsc {
+	background-color: #F7F6F4;
 	margin-top: 0px;
-	opacity: 0.5;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
     position: relative;
 }
 
-.preview:hover {
-	opacity: 1;
+.previewqsc:hover {
+	background-color: #84BDFF;
 }
 
 .sp {
@@ -415,29 +408,6 @@ footer img:hover{
 	position: relative;
 }
 
-/* #Index
-================================================== */
-
-.projectthumbnail{
-	box-sizing: border-box;
-	max-width: 100%;
-}
-
-.row.group.index{
-	padding: 30px 0px;
-}
-
-.projectdescription{
-	margin: 20px auto;
-	margin-right: 20px;
-	font-size: 15px;
-	letter-spacing: 0.2px;
-}
-
-.full_background.index {
-	background-image: url("../images/index.jpg");
-}
-
 
 /* #About
 ================================================== */
@@ -461,18 +431,17 @@ footer img:hover{
 /*heading2*/
 	font-family: Arvo;
 	letter-spacing: 0px;
-	font-size: 18px;
+	font-size: 15px;
 	text-align: left;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
     margin-top: 15px;
 }
 
 .wrapper h3{
 /*emphasize*/
 	font-family: Arvo;
-	letter-spacing: 0px;
 	color: #4F4F4F;
-	font-size: 35px;
+	font-size: 25px;
 }
 
 .wrapper h4{
@@ -482,9 +451,34 @@ footer img:hover{
 	font-size: 18px;
 }
 
+.wrapper h5{
+/*emphasize*/
+	font-family: Arvo;
+	letter-spacing: 0px;
+	font-size: 15px;
+	text-align: left;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    color: #FF2851;
+/*    text-align: center;*/
+}
+
+.wrapper h6{
+/*emphasize*/
+	font-family: Montserrat;
+	color: #4F4F4F;
+	font-size: 20px;
+/*	text-align: center;*/
+	margin-bottom: 40px;
+}
+
+.fullscreen{
+	width: device-width;
+}
+
 /*qscmobile=======================================================*/
 
-.full_background.tide {
+.background.tide {
 	background-color: #F7F6F4;
 }
 
@@ -505,7 +499,7 @@ footer img:hover{
 }
 
 .container.tide a:hover {	
-	color: #84BDFF; 
+	color: #0076FF; 
 }
 
 .container.tide h1,h2{
