@@ -116,12 +116,22 @@ h5 {
 
 h9 {	
 /* Perpendicular title text for case study previews on index.html */
-	color: #fff;
+	color: #4F4F4F;
 	font-family: Arvo;
 	font-size:25px;
 	position: absolute;
-	right: 15px;
+	right: 8%;
 	top: 80px;
+}
+
+h10 {	
+/* Perpendicular title text for case study previews on index.html */
+	color: #FF2851;
+	font-family: Arvo;
+	font-size:15px;
+	position: absolute;
+	right: 8%;
+	top: 120px;
 }
 
 
@@ -339,18 +349,81 @@ nav a:hover {
 
 /*preview===================*/
 
-.previewqsc {
-	background-color: #F7F6F4;
-	margin-top: 0px;
-    position: relative;
+.preview1{
+	background-color: #84BDFF;
+	margin-bottom:20px;
 }
 
-.previewqsc:hover {
-	background-color: #84BDFF;
+.preview2{
+	background-color: #77C9FF;
+	margin-bottom:20px;
+}
+
+.preview3{
+	background-color: #FFF59D;
+	margin-bottom:20px;
+}
+
+.preview4{
+	background-color: #FFAAAA;
+	margin-bottom:20px;
+}
+
+.preview1 img{
+	opacity: 1;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	-moz-transition: 300ms;
+    -webkit-transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.preview2 img{
+	opacity: 1;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	-moz-transition: 300ms;
+    -webkit-transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.preview3 img{
+	opacity: 1;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	-moz-transition: 300ms;
+    -webkit-transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.preview4 img{
+	opacity: 1;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	-moz-transition: 300ms;
+    -webkit-transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+.preview1:hover img{
+	opacity: .1;
+}
+
+.preview2:hover img{
+	opacity: .1;
+}
+
+.preview3:hover img{
+	opacity: .1;
+}
+
+.preview4:hover img{
+	opacity: .1;
 }
 
 .sp {
-	box-sizing: border-box; 
+	box-sizing: border-box;
  	max-width: 100%;
 }
 
@@ -399,13 +472,6 @@ footer img:hover{
 	transition: .25s ease-in-out;	
 	-moz-transition: opacity 2.5s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;*
-}
-
-/* #Work
-================================================== */
-
-#preview4 {
-	position: relative;
 }
 
 
@@ -510,6 +576,15 @@ footer img:hover{
 	float: center;
 }
 
+
+/*culcpal*/
+
+.banner_culc {
+	background-color: #93D048;
+	background-size: cover;
+	margin-top: 0px;
+	overflow: hidden;
+}
 /**/
 
 /* #Extra Small Devices, Phones */ 
