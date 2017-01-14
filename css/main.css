@@ -114,26 +114,6 @@ h5 {
 	font-size: 18px;
 }
 
-h9 {	
-/* Perpendicular title text for case study previews on index.html */
-	color: #4F4F4F;
-	font-family: Arvo;
-	font-size:25px;
-	position: absolute;
-	right: 8%;
-	top: 80px;
-}
-
-h10 {	
-/* Perpendicular title text for case study previews on index.html */
-	color: #FF2851;
-	font-family: Arvo;
-	font-size:15px;
-	position: absolute;
-	right: 8%;
-	top: 120px;
-}
-
 
 iframe {
 	display: block;
@@ -349,6 +329,13 @@ nav a:hover {
 
 /*preview===================*/
 
+#work h6{
+	padding: 30px;
+	position: absolute;
+	top:30px; 
+	left:30px;
+}
+
 .preview1{
 	background-color: #84BDFF;
 	margin-bottom:20px;
@@ -365,7 +352,7 @@ nav a:hover {
 }
 
 .preview4{
-	background-color: #FFAAAA;
+	background-color: #FCE4EC;
 	margin-bottom:20px;
 }
 

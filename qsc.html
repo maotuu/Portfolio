@@ -103,7 +103,7 @@
           <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;"> My Role
         </h4>
         <p>
-          As the Design Lead, I led user research. Then based on insights developed by us, I participated product feature planning and designed the interaction of the App.
+          As the Design Lead, I led user research and gathered requirements from other stakeholders during the research phase. After that I was in charge of prduct design of iOS version. I came up with inforamtion architecture, wireframes and interacions as well as wrote the Interaction Design Document. I also participated in the high-fidelity interfaces using Sketch.
         </p>
         <h4>
           <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;">Methods and Tools
@@ -214,18 +214,8 @@
     </div>
   </div>
 
-  <div class="background tide">
-    <div class="container tide">
-      <div class="row group">
-        <div class="sixteen columns">
-<!-- images here -->
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="fullscreen">
-      <img src="images/qsccritique.png" class="sp">
+      <img src="images/qsccritique.png" class="sp img_padding">
   </div>
 
   <div class="background tide">
@@ -323,7 +313,7 @@
         <h2>#1. Feature Planning</h2>
         <h3>What information to include?</h3>
         <p>
-        Considering all of the information that students seek for school, we picked out information which were <b>important</b> and <b>frequently required through smartphones</b> based off user research. The product forms of Share, Box, Notice were also sorted out.
+        Considering all of the information that students seek for school, we picked out information which were both <b>important</b> and <b>frequently required through smartphones</b> based off user research. The product forms of Share, Box, Notice were also sorted out.
         <br>
         </p>
       </div>
@@ -332,8 +322,8 @@
 
   <div class="container tide">
     <div class="row group">
-      <div class="offset-by-two twelve columns">
-      <img src="images/qscfeatures.jpg" class="full-width img_padding">
+      <div class="sixteen columns">
+      <img src="images/qscfeatures.jpg" class="full-width img_padding_small">
       </div>
     </div>
   </div>
@@ -342,15 +332,64 @@
     <div class="row group">
       <div class="offset-by-two twelve columns">
         <h2>#2. Design Ideation</h2>
-        <h3>How to display the information?</h3>
+        <h3>Convergence: How to display the information?</h3>
         <p>
-          Students in Zhejiang University are frustrated with the cumbersome process of accessing many different websites to obtain the information that they need for school. Courses, exams, homework, labs, school bus information and exam date are all at different places. They either waste time checking all of them, or get lost.
-        <br>
+        Organizing so much irrelevant and relevant information together is the first obstacle. We need to strike the balance, which could let users quickly access what they want in the minimum steps while still keep all the information well organized. Below are the three proposed design concepts after the first round of brain storming and sketches.
         </p>
       </div>
     </div>
   </div>
 
+  <div class="container tide">
+    <div class="row group">
+      <div class="sixteen columns">
+      <img src="images/qscconcepts.jpg" class="full-width img_padding">
+      </div>
+    </div>
+  </div>
+
+  <div class="container tide">
+    <div class="row group">
+      <div class="offset-by-two twelve columns">
+        <p>
+          <b>Concept 1:</b> This icon-based design with multiple cells improves the visual comprehension of the different inforamtion. <br>
+          <b>Concept 2:</b> This Metro UI styled design lets the information and data become the visual elements and controls. Users see the important information on the homescreen directly.<br>
+          <b>Concept 3:</b> This design with tab bars allows users to quickly navigate between important sections at the app level.<br><br>
+        <h3>1,2, or 3? Let's check users' thoughts.</h3>
+        <p>
+        At first, we were pretty stuck here to decide which of the three we should go further with. A quick low-fidelity user testing saved us from the fights. Six users participated in our simple user testing with paper prototype and gave us comments. They mentioned that <b>Concept 1 was mediocre and safe</b>. <b>Concept 2 showed a good practice for trying to show more on the homescreen</b>. But as iOS users, <b>they felt strange to see a window-styled UI</b>. They gave us inspiration to <b>add another tab to concept 3 to act as a homescreen, which display information itelligently in the scenarios</b>.
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="background tide">
+    <div class="container tide">
+      <div class="row group">
+        <div class="offset-by-two twelve columns">
+          <h5>Insight</h5>
+          <h6>Mobile should have an intelligent way to display the information. That is to say, everytime when users open the APP, their desired information is just on the screen.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container tide">
+    <div class="row group">
+      <div class="offset-by-two twelve columns">
+        <h2>#2. Design Ideation</h2>
+        <h3>2nd Convergence: To review a day of a typical user.</h3>
+        <p>
+        When we drew the day of a typical user, we found the pattern.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fullscreen">
+      <img src="images/qscscenario.jpg" class="sp img_padding">
+  </div>
 
 <!-- division -->
   <div class="container">
@@ -419,10 +458,10 @@
 
         $(window).scroll(function() {
             var windscroll = $(window).scrollTop();
-            if (windscroll >= 1780 && windscroll <= 6700) {
+            if (windscroll >= 1780 && windscroll <= 6900) {
                 $('#s2 a, #s3 a, #s4 a, #s5 a').removeClass('current');
                 $('#s1 a').addClass('current');
-            } else if (windscroll >= 6700 && windscroll <= 30000) {
+            } else if (windscroll >= 6900 && windscroll <= 30000) {
                 $('#s1 a, #s3a, #s4 a, #s5 a').removeClass('current');
                 $('#s2 a').addClass('current');
             } else if (windscroll >= 30000 && windscroll <= 36000) {
