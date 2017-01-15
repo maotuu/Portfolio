@@ -330,30 +330,33 @@ nav a:hover {
 /*preview===================*/
 
 #work h6{
-	padding: 30px;
-	position: absolute;
-	top:30px; 
-	left:30px;
+	color: white;
+	font-family: Arvo;
+	font-size: 17px;
+	left: 0;
+	line-height: 20px;
+    position:absolute;
+    text-align:center;
+    top: 47%;
+    width: 100%;
 }
 
 .preview1{
 	background-color: #84BDFF;
 	margin-bottom:20px;
+	position: relative;
 }
 
 .preview2{
 	background-color: #77C9FF;
 	margin-bottom:20px;
+	position: relative;
 }
 
 .preview3{
 	background-color: #FFF59D;
 	margin-bottom:20px;
-}
-
-.preview4{
-	background-color: #FCE4EC;
-	margin-bottom:20px;
+	position: relative;
 }
 
 .preview1 img{
@@ -392,6 +395,15 @@ nav a:hover {
     transition: .3s ease-in-out;
 }
 
+.preview1 h6{
+	opacity: 0;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	-moz-transition: 300ms;
+    -webkit-transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
 
 .preview1:hover img{
 	opacity: .1;
@@ -407,6 +419,10 @@ nav a:hover {
 
 .preview4:hover img{
 	opacity: .1;
+}
+
+.preview1:hover h6{
+	opacity: 1;
 }
 
 .sp {
