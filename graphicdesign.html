@@ -62,7 +62,8 @@
 
   </head>
   <body>
-
+  
+<!-- Gallery -->
   <div id="container">
     <div class="grid-sizer"></div>
     <div class="item">
@@ -171,8 +172,17 @@
 
 <!-- initialize the masonry plugin --> 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(window).load( function() {
+
+        $('#container').masonry({
+            "itemSelector": ".item",
+            "columnWidth": ".grid-sizer",
+        });
+
+    });
+  </script>
   <script src="js/masonry.js"></script>
-  <script src="js/main.js"></script>
 
 <!-- footer -->
    <footer>
@@ -186,32 +196,6 @@
       <div class="copyright"> Copyright © 2016-2017 XINYU LI</div>
     </div>
   </footer>
-
-<!-- Scroll to top button -->
-<a href="#" class="scrollToTop"></a>
-
-
-<!-- Scroll to top button -->
-<script>
-    $(document).ready(function(){
-
-//Check to see if the window is top if not then display button
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 800) {
-                $('.scrollToTop').fadeIn();
-            } else {
-                $('.scrollToTop').fadeOut();
-            }
-        });
-
-//Click event to scroll to top
-        $('.scrollToTop').click(function(){
-            $('html, body').animate({scrollTop : 0},800);
-            return false;
-        });
-    });
-</script>
-
 
 </body>
 </html>
