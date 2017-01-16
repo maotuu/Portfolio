@@ -42,35 +42,49 @@ body {
 	margin: 0px;
 }
 
-button {
-
-	background: #FF2851;
-	border: solid 2px #FF2851;
-	border-radius: 24px;
-	color: #FFFFFF;
-	display: block;
-	font-family: Montserrat;
-	font-weight: 700;
-	font-size: 12px;
-	letter-spacing: 2.4px;
-	margin: 30px auto 50px 0px;
-	opacity: 1;
-	transition: opacity .35s ease-in-out;
-    -moz-transition: opacity .35s ease-in-out;
-    -webkit-transition: opacity .35s ease-in-out;
-	padding: 10px 20px 10px 20px;
-	width: 170px;
-
+.button {
+  display: inline-block;
+  border-radius: 24px;
+  background-color: #FF2851;
+  color: #FFFFFF;
+  border: none;
+  font-family: Montserrat;
+  letter-spacing: 0.4px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 240px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-button:hover {
-	color: #FF2851;
-	background: #FFFFFF;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  transition: 0.5s;
 }
 
-.button a {
-	text-decoration: none;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 h1 {
 /*case study titles*/
