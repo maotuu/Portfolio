@@ -282,14 +282,20 @@ nav a:hover {
 
 /*some elements*/
 
-.line {
+.division {
+	background-color: #EDEDED;
+	height: 2px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.line{
 	background-color: #EDEDED;
 	height: 1px;
 	margin-top: 10px;
 }
 
-.division {
-	background-color: #EDEDED;
+.division2 {
 	height: 2px;
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -354,7 +360,7 @@ nav a:hover {
 }
 
 .preview3{
-	background-color: #FFF59D;
+	background-color: black;
 	margin-bottom:20px;
 	position: relative;
 }
@@ -450,31 +456,47 @@ nav a:hover {
 /* #Footer
 ================================================== */
 
-footer {
-	margin: auto;
-	padding-bottom: 100px;
-	width: 230px;
+footer{
+  background: #F6F6F6;
+  width:100%;
+  height:130px;
+  overflow:hidden;
+  position:relative;
+  z-index:10;
 }
 
-footer #copyright {
-	color: #4f4f4f;
-	display: block;
-	text-align: center;
-	font-family: yrsa;
-	margin: 10px auto 0px auto;
+.footer-margin{
+  width:1140px;
+  margin: 40px auto;
+  line-height: 30px;
 }
 
-footer img {
-	float: left;
-	opacity: 0.6;
-	padding: 0px 16px;
+.footer-margin .copyright{
+  color: #4A4A4A;
+  letter-spacing: 1px;
+  font-size: 12px;
+  width: 100%;
+  text-align:center;
+  float: left;
 }
 
-footer img:hover{
-	opacity: 1;
-	transition: .25s ease-in-out;	
-	-moz-transition: opacity 2.5s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;*
+.footer-margin .social-footer{
+  width: 100%;
+  text-align:center;
+  float: left;
+}
+
+.footer-margin .social-footer a{
+  font-size:15px;
+  padding: 10px;
+  border:0;
+}
+
+.footer-margin .social-footer a:hover{
+  opacity: 0.6;
+  transition: .25s ease-in-out;	
+  -moz-transition: opacity 2.5s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 
@@ -529,7 +551,6 @@ footer img:hover{
     margin-bottom: 0px;
     margin-top: 40px;
     color: #FF2851;
-/*    text-align: center;*/
 }
 
 .wrapper h6{
@@ -590,6 +611,49 @@ footer img:hover{
 }
 /**/
 
+
+/*animation*/
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 /* #Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 
@@ -639,10 +703,6 @@ footer img:hover{
 		right:5px;
 	}
 
-	.spacer {
-		height: 80px;
-	}
-
 	.subtitle {
 		font-size: 18px;
 		padding-top: 5px;
@@ -652,7 +712,6 @@ footer img:hover{
 
 /* #Small Devices */
 @media only screen and (max-width: 767px) {
-
 
 	p{
 		text-align: left;
