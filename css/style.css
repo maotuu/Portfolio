@@ -349,37 +349,65 @@ nav a:hover {
 
 /*preview===================*/
 
-#work h6{
+#work h1{
 	color: white;
 	font-family: Arvo;
-	font-size: 17px;
+	font-size: 20px;
 	left: 0;
 	line-height: 20px;
     position:absolute;
     text-align:center;
-    top: 47%;
+    top: 33%;
     width: 100%;
+}
+
+#work h2{
+	color: white;
+	font-family: Open Sans;
+	font-size: 15px;
+	letter-spacing: 0.1;
+	left: 10%;
+	line-height: 20px;
+    position:absolute;
+    text-align:center;
+    top: 49%;
+    width: 80%;
+}
+
+#work h3{
+	color: white;
+	font-family: Open Sans;
+	font-size: 14px;
+	left: 0;
+	line-height: 20px;
+    position:absolute;
+    text-align:center;
+    top: 70%;
+    width: 100%;
+}
+
+.preview{
+	margin-bottom:20px;
+	position: relative;	
 }
 
 .preview1{
 	background-color: #84BDFF;
-	margin-bottom:20px;
-	position: relative;
 }
 
 .preview2{
-	background-color: #77C9FF;
-	margin-bottom:20px;
-	position: relative;
+	background-color: #00ACE3;
 }
 
 .preview3{
 	background-color: black;
-	margin-bottom:20px;
-	position: relative;
 }
 
-.preview1 img{
+.preview4{
+	background-color: #B8E986;
+}
+
+.preview img{
 	opacity: 1;
 	-o-transition: 300ms;
 	-ms-transition: 300ms;
@@ -388,34 +416,7 @@ nav a:hover {
     transition: .3s ease-in-out;
 }
 
-.preview2 img{
-	opacity: 1;
-	-o-transition: 300ms;
-	-ms-transition: 300ms;
-	-moz-transition: 300ms;
-    -webkit-transition:.3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.preview3 img{
-	opacity: 1;
-	-o-transition: 300ms;
-	-ms-transition: 300ms;
-	-moz-transition: 300ms;
-    -webkit-transition:.3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.preview4 img{
-	opacity: 1;
-	-o-transition: 300ms;
-	-ms-transition: 300ms;
-	-moz-transition: 300ms;
-    -webkit-transition:.3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.preview1 h6{
+.preview h1,h2,h3{
 	opacity: 0;
 	-o-transition: 300ms;
 	-ms-transition: 300ms;
@@ -424,25 +425,20 @@ nav a:hover {
     transition: .3s ease-in-out;
 }
 
-
-.preview1:hover img{
-	opacity: .1;
+.preview:hover img{
+	opacity: .03;
 }
 
-.preview2:hover img{
-	opacity: .1;
-}
-
-.preview3:hover img{
-	opacity: .1;
-}
-
-.preview4:hover img{
-	opacity: .1;
-}
-
-.preview1:hover h6{
+.preview:hover h1{
 	opacity: 1;
+}
+
+.preview:hover h2{
+	opacity: 1;
+}
+
+.preview:hover h3{
+	opacity: 0.8;
 }
 
 .sp {
@@ -612,6 +608,15 @@ footer{
 
 .four.coulunms.tide{
 	float: center;
+}
+
+/*true sight*/
+
+.banner_ts {
+	background-color: #84BDFF;
+	background-size: cover;
+	margin-top: 0px;
+	overflow: hidden;
 }
 
 
