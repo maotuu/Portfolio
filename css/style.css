@@ -1,4 +1,4 @@
-/* Copyright (c) 2015-2016 Xinyu Li*/
+/* Copyright (c) 2016-2017 Xinyu Li*/
 
 
 /* #Basic elements
@@ -42,35 +42,49 @@ body {
 	margin: 0px;
 }
 
-button {
-
-	background: #FF2851;
-	border: solid 2px #FF2851;
-	border-radius: 24px;
-	color: #FFFFFF;
-	display: block;
-	font-family: Montserrat;
-	font-weight: 700;
-	font-size: 12px;
-	letter-spacing: 2.4px;
-	margin: 30px auto 50px 0px;
-	opacity: 1;
-	transition: opacity .35s ease-in-out;
-    -moz-transition: opacity .35s ease-in-out;
-    -webkit-transition: opacity .35s ease-in-out;
-	padding: 10px 20px 10px 20px;
-	width: 170px;
-
+.button {
+  display: inline-block;
+  border-radius: 24px;
+  background-color: #FF2851;
+  color: #FFFFFF;
+  border: none;
+  font-family: Montserrat;
+  letter-spacing: 0.4px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 240px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-button:hover {
-	color: #FF2851;
-	background: #FFFFFF;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  transition: 0.5s;
 }
 
-.button a {
-	text-decoration: none;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 h1 {
 /*case study titles*/
@@ -112,6 +126,15 @@ h5 {
 	letter-spacing: 0px;
 	color: #FF2851;
 	font-size: 18px;
+}
+
+h7{
+	font-family: Open Sans;
+	color: #4F4F4F;
+	font-size: 12px;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	display: inline-block;
 }
 
 
@@ -169,6 +192,10 @@ p {
 
 .img_padding_small {
 	margin: 15px auto 30px auto;
+}
+
+.img_padding_caption{
+	margin: 15px auto 0px auto;	
 }
 
 .iphone {
@@ -335,37 +362,65 @@ nav a:hover {
 
 /*preview===================*/
 
-#work h6{
+#work h1{
 	color: white;
 	font-family: Arvo;
-	font-size: 17px;
+	font-size: 20px;
 	left: 0;
 	line-height: 20px;
     position:absolute;
     text-align:center;
-    top: 47%;
+    top: 33%;
     width: 100%;
+}
+
+#work h2{
+	color: white;
+	font-family: Open Sans;
+	font-size: 15px;
+	letter-spacing: 0.1;
+	left: 10%;
+	line-height: 20px;
+    position:absolute;
+    text-align:center;
+    top: 49%;
+    width: 80%;
+}
+
+#work h3{
+	color: white;
+	font-family: Open Sans;
+	font-size: 14px;
+	left: 0;
+	line-height: 20px;
+    position:absolute;
+    text-align:center;
+    top: 70%;
+    width: 100%;
+}
+
+.preview{
+	margin-bottom:20px;
+	position: relative;	
 }
 
 .preview1{
 	background-color: #84BDFF;
-	margin-bottom:20px;
-	position: relative;
 }
 
 .preview2{
-	background-color: #77C9FF;
-	margin-bottom:20px;
-	position: relative;
+	background-color: #00ACE3;
 }
 
 .preview3{
 	background-color: black;
-	margin-bottom:20px;
-	position: relative;
 }
 
-.preview1 img{
+.preview4{
+	background-color: #80CBC4;
+}
+
+.preview img{
 	opacity: 1;
 	-o-transition: 300ms;
 	-ms-transition: 300ms;
@@ -374,34 +429,7 @@ nav a:hover {
     transition: .3s ease-in-out;
 }
 
-.preview2 img{
-	opacity: 1;
-	-o-transition: 300ms;
-	-ms-transition: 300ms;
-	-moz-transition: 300ms;
-    -webkit-transition:.3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.preview3 img{
-	opacity: 1;
-	-o-transition: 300ms;
-	-ms-transition: 300ms;
-	-moz-transition: 300ms;
-    -webkit-transition:.3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.preview4 img{
-	opacity: 1;
-	-o-transition: 300ms;
-	-ms-transition: 300ms;
-	-moz-transition: 300ms;
-    -webkit-transition:.3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.preview1 h6{
+.preview h1, .preview h2,.preview h3{
 	opacity: 0;
 	-o-transition: 300ms;
 	-ms-transition: 300ms;
@@ -410,25 +438,20 @@ nav a:hover {
     transition: .3s ease-in-out;
 }
 
-
-.preview1:hover img{
-	opacity: .1;
+.preview:hover img{
+	opacity: .03;
 }
 
-.preview2:hover img{
-	opacity: .1;
-}
-
-.preview3:hover img{
-	opacity: .1;
-}
-
-.preview4:hover img{
-	opacity: .1;
-}
-
-.preview1:hover h6{
+.preview:hover h1{
 	opacity: 1;
+}
+
+.preview:hover h2{
+	opacity: 1;
+}
+
+.preview:hover h3{
+	opacity: 0.8;
 }
 
 .sp {
@@ -516,6 +539,8 @@ footer{
 	font-size: 28px;
 	letter-spacing: 1px;
 	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 15px;
 }
 
 .wrapper h2{
@@ -525,7 +550,6 @@ footer{
 	font-size: 15px;
 	text-align: left;
     margin-bottom: -10px;
-    margin-top: 15px;
 }
 
 .wrapper h3{
@@ -558,7 +582,6 @@ footer{
 	font-family: Montserrat;
 	color: #4F4F4F;
 	font-size: 20px;
-/*	text-align: center;*/
 	margin-bottom: 40px;
 }
 
@@ -592,24 +615,79 @@ footer{
 	color: #0076FF; 
 }
 
-.container.tide h1,h2{
+.container.tide h1,.container.tide h2{
 	color: #0076FF;
 }
 
-.four.coulunms.tide{
-	float: center;
+/*true sight*/
+
+.banner_ts {
+	background-color: #80CBC4;
+	background-size: cover;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.background.truesight {
+	background-color: #F7F6F4;
+}
+
+.container.truesight a {
+	color: #313131;
+	-webkit-transition: color 0.2s;
+	-moz-transition:    color 0.2s;
+	-ms-transition:     color 0.2s;
+	-o-transition:      color 0.2s;
+	transition:         color 0.2s;
+}
+
+.container.truesight a{	
+	color: #4DB6AC; 
+}
+
+.container.truesight a:hover{	
+	color: #FF2851; 
+}
+
+.container.truesight h1, .container.truesight h2{
+	color: #4DB6AC;
 }
 
 
 /*culcpal*/
 
 .banner_culc {
-	background-color: #93D048;
+	background-color: #00ACE3;
 	background-size: cover;
 	margin-top: 0px;
 	overflow: hidden;
 }
-/**/
+
+.background.culc {
+	background-color: #F7F6F4;
+}
+
+.container.culc a {
+	color: #313131;
+	-webkit-transition: color 0.2s;
+	-moz-transition:    color 0.2s;
+	-ms-transition:     color 0.2s;
+	-o-transition:      color 0.2s;
+	transition:         color 0.2s;
+}
+
+.container.culc a{	
+	color: #00ACE3; 
+}
+
+.container.culc a:hover{	
+	color: #FF2851; 
+}
+
+.container.culc h1, .container.culc h2{
+	color: #00ACE3;
+}
+
 
 /*graphic design*/
 

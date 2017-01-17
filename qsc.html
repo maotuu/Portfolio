@@ -18,14 +18,15 @@
   <!-- Google Analytics
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-48335777-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-88291083-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
 </head>
 <body>
@@ -64,7 +65,7 @@
         <li id="s1"><a href="#" data-scroll="s1">RESEARCH</a></li>
         <li id="s2"><a href="#" data-scroll="s2">IDEATION</a></li>
         <li id="s3"><a href="#" data-scroll="s3">INTERACTION</a></li>
-        <li id="s4"><a href="#" data-scroll="s4">RESULT</a></li>
+        <li id="s4"><a href="#" data-scroll="s4">RESULTS</a></li>
         <li id="s5"><a href="#" data-scroll="s5">REFLECTION</a></li>
       </ul>
     <div class="line" style="margin-top: 3px;"></div>
@@ -94,7 +95,7 @@
           <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;">Methods and Tools
         </h4>
         <p>
-          User Research, Competitive Analysis, Wireframing, Prototyping, Sketch, Invision
+          User Research, Market Research, Persona and Scenario, Wireframing, Sketch, Axure
         </p>
       </div>
     </div>
@@ -107,7 +108,7 @@
     	<div class="offset-by-two twelve columns">
         <p>
         <br><br>
-        From 2013 to 2015, I worked at QSC, the student portal of Zhejiang University. As the design lead, I and my team designed products and services to provide thousands of students the ultimate campus experience. In 2014, we handled a product audit of our main four products and redesigned Mobile, the core product of us.
+        From 2013 to 2015, I worked at QSC, the student portal of Zhejiang University. As the design lead, I and my team designed products and services to provide thousands of students the ultimate campus experience. In 2014, we handled a product audit of our main four products and redesigned Mobile to be the personal assistant of students in Zhejiang University.
         <br>
         </p>
       </div>
@@ -117,7 +118,7 @@
   <div class="container tide">
     <div class="row group">
       <div class="sixteen columns">
-      <img src="images/qscroadmap.png" class="full-width img_padding_small">
+      <img src="images/qscroadmap.png" class="full-width img_padding">
       </div>
     </div>
   </div>
@@ -292,7 +293,7 @@
   <div class="container tide">
     <div class="row group">
       <div class="offset-by-two twelve columns">
-      <section id="s2" data-anchor="s2">`
+      <section id="s2" data-anchor="s2">
         <h1>IDEATION</h1>
         </section>
         <h2>#1. Feature Planning</h2>
@@ -573,19 +574,19 @@
 
         $(window).scroll(function() {
             var windscroll = $(window).scrollTop();
-            if (windscroll >= 1780 && windscroll <= 6900) {
+            if (windscroll >= 1830 && windscroll <= 6970) {
                 $('#s2 a, #s3 a, #s4 a, #s5 a').removeClass('current');
                 $('#s1 a').addClass('current');
-            } else if (windscroll >= 6900 && windscroll <= 12100) {
+            } else if (windscroll >= 6970 && windscroll <= 12200) {
                 $('#s1 a, #s3 a, #s4 a, #s5 a').removeClass('current');
                 $('#s2 a').addClass('current');
-            } else if (windscroll >= 12100 && windscroll <= 15100) {
+            } else if (windscroll >= 12200 && windscroll <= 15200) {
                 $('#s1 a, #s2 a, #s4 a, #s5 a').removeClass('current');
                 $('#s3 a').addClass('current');
-            } else if (windscroll >= 15100 && windscroll <= 23850) {
+            } else if (windscroll >= 15200 && windscroll <= 24000) {
                 $('#s1 a, #s2 a, #s3 a, #s5 a').removeClass('current');
                 $('#s4 a').addClass('current');
-            } else if (windscroll >= 23850) {
+            } else if (windscroll >= 24000) {
                 $('#s1 a, #s2 a, #s3 a, #s4 a').removeClass('current');
                 $('#s5 a').addClass('current');
             } else {
