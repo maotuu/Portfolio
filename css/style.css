@@ -657,12 +657,37 @@ footer{
 /*culcpal*/
 
 .banner_culc {
-	background-color: #93D048;
+	background-color: #00ACE3;
 	background-size: cover;
 	margin-top: 0px;
 	overflow: hidden;
 }
-/**/
+
+.background.culc {
+	background-color: #F7F6F4;
+}
+
+.container.culc a {
+	color: #313131;
+	-webkit-transition: color 0.2s;
+	-moz-transition:    color 0.2s;
+	-ms-transition:     color 0.2s;
+	-o-transition:      color 0.2s;
+	transition:         color 0.2s;
+}
+
+.container.culc a{	
+	color: #00ACE3; 
+}
+
+.container.culc a:hover{	
+	color: #FF2851; 
+}
+
+.container.culc h1, .container.culc h2{
+	color: #00ACE3;
+}
+
 
 /*graphic design*/
 

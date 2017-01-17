@@ -32,7 +32,7 @@
 <body>
 
 <!-- banner and navigation -->
-  <div class="banner_tide">
+  <div class="banner_culc">
     <div class="container" style="padding-top: 40px;">
       <nav>
         <div class="row group">
@@ -51,9 +51,9 @@
 
       <div class="row group">
         <div class="sixteen columns">
-          <h1 style="text-align: center;">QSC Mobile</h1>
-          <h2 style="color: #FFF;">...the <span style="font-weight: 700; color: #FFFFFF;">ONLY</span> APP students need at Zhejiang University...</h2>
-          <img src="images/qscbanner.jpg" class="banner_image" style="height: 80%;">
+          <h1 style="text-align: center;">Culc Pal</h1>
+          <h2 style="color: #FFF;">...Find your studying spot, quicker and better...</h2>
+          <img src="images/cpbanner.png" class="banner_image" style="height: 80%;">
         </div>
       </div>
     </div>
@@ -64,9 +64,8 @@
       <ul>
         <li id="s1"><a href="#" data-scroll="s1">RESEARCH</a></li>
         <li id="s2"><a href="#" data-scroll="s2">IDEATION</a></li>
-        <li id="s3"><a href="#" data-scroll="s3">INTERACTION</a></li>
-        <li id="s4"><a href="#" data-scroll="s4">RESULT</a></li>
-        <li id="s5"><a href="#" data-scroll="s5">REFLECTION</a></li>
+        <li id="s3"><a href="#" data-scroll="s3">DESIGN</a></li>
+        <li id="s4"><a href="#" data-scroll="s4">PROTOTYPE</a></li>
       </ul>
     <div class="line" style="margin-top: 3px;"></div>
   </div>
@@ -74,28 +73,27 @@
 <div class="wrapper">
 
 <!-- project intro -->
-<div class="background tide intro">
-  <div class="container tide">
+<div class="background culc intro">
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
         <h4>
-          <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;"> Duration
+          <img src="images/culcquote.png" style="padding-top: 30px; padding-bottom: 10px;"> Duration
         </h4>
         <p>
-        2014-2015 @ QSC ( Student Portal of Zhejiang University )<br>
-        <a href="https://itunes.apple.com/app/qiu-shi-chaomobile/id583334920" target="_blank">Check it out on App Store <img src="images/link.svg" width="10" alt="(External link)" /></a>
+        2016 Fall @ CS8803 Human-Computer Interaction<br>
         </p>
         <h4>
-          <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;"> My Role
+          <img src="images/culcquote.png" style="padding-top: 30px; padding-bottom: 10px;"> My Role
         </h4>
         <p>
-          As the Design Lead, I led user research and gathered requirements from other stakeholders during the research phase. After that I was in charge of prduct design of iOS version. I came up with inforamtion architecture, wireframes and interacions as well as wrote the Interaction Design Document. I also participated in the high-fidelity interfaces using Sketch.
+          At the earlier stage of the project, I led the user research process from observation to contextual inquiry. During the ideation, I created sketches and storyboard to showcase the ideas. After we decided on our final idea, I was responsible for the design from user flow all the way to the high-fidelity prototype.
         </p>
         <h4>
-          <img src="images/qscquote.png" style="padding-top: 30px; padding-bottom: 10px;">Methods and Tools
+          <img src="images/culcquote.png" style="padding-top: 30px; padding-bottom: 10px;">Methods and Tools
         </h4>
         <p>
-          User Research, Competitive Analysis, Wireframing, Prototyping, Sketch, Invision
+          Field Study, Contexual Inquiry, Persona, Storyboard, Hierachy Task Analysis, Sketch, Principle, HTML/CSS/JavaScript
         </p>
       </div>
     </div>
@@ -103,421 +101,288 @@
 </div>
 
 <!-- introduction -->
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
     	<div class="offset-by-two twelve columns">
         <p>
         <br><br>
-        From 2013 to 2015, I worked at QSC, the student portal of Zhejiang University. As the design lead, I and my team designed products and services to provide thousands of students the ultimate campus experience. In 2014, we handled a product audit of our main four products and redesigned Mobile, the core product of us.
+        Georgia Tech offers a variety of different study locations all over the campus. With its central location and variety of resources, the Clough Undergraduate Learning Center (CULC) is a popular study destination for students. Due to the importance of the CULC and the close connection that is shared between students and its resources, we decided to understand how students choose to study at this location and the tasks they performed while making a decision.
         <br>
         </p>
       </div>
     </div>
   </div>
 
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
       <div class="sixteen columns">
-      <img src="images/qscroadmap.png" class="full-width img_padding_small">
+      <img src="images/culc_image.jpg" class="full-width img_padding">
+      </div>
+    </div>
+  </div>
+
+  <div class="container culc">
+    <div class="row group">
+      <div class="offset-by-two twelve columns">
+        <p>
+        In this semester-long project, through exhaustive user research, we found that students often find it difficult to find a desired spot in CULC to study especially during the homework completion process, exams, midterms, dead week. Therefore, we aim to solve the issues they encounted by designing CULC PAL that helps assist in helping locate spots in the CULC.
+        <br>
+        </p>
       </div>
     </div>
   </div>
 
 <!-- research-->
 
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
     	<div class="offset-by-two twelve columns">
     	<section id="s1" data-anchor="s1">
         <h1>RESEARCH</h1>
         </section>
-        <h2>#1. Pain Points</h2>
-        <h3>Cumbersome websites cause frustration.</h3>
+        <h2>#1. Target User</h2>
         <p>
-          Students in Zhejiang University are frustrated with the cumbersome process of accessing many different websites to obtain the information that they need for school. Courses, exams, homework, labs, school bus information and exam date are all at different places. They either waste time checking all of them, or get lost.
+          To better understand the process a student goes through, it was important to focus on our target user group. The users we researched are students who choose to study in the CULC.
         <br>
         </p>
       </div>
     </div>
   </div>
 
-  <div class="container tide">
-    <div class="row group">
-      <div class="sixteen columns">
-      <img src="images/qscproblems.png" class="full-width img_padding">
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
-        <h3>Students miss fascinating on-campus events.</h3>
+        <h2 style="margin-top: 50px;">#2. Research</h2>
+        <h3>Observation (Deep Hanging Out)</h3>
         <P>
-          With Renren (the social network once lauched as “China’s Facebook”) reaching its vanishing point, the most important channel to spread on-campus events was cut off.
-          <br>
-          Well, some people say that, "You still have Wechat! Students share Moments (Wechat's social network posts). Since most Moments friends are acquaintances, messages delivered by them can be more convincing."
-          <br>
-          Well, it sounds true. However, it's just because of friends are acquintances that people tend not to share posts frequently. Events shared by an organization will not go further from people who are in it.
-          <br>
-          There exist traditional channels to spread information like posters and banners around the campus, and campaigns on the Student Square. They have low exposure rates and cover just a small portion of students.
+          The project began with just a rough idea - to support students who study at CULC. So We started with unobtrusive observation to narrow down to a problem space. In total, three observed activities were conducted on September 28 , 2016 in three different periods of a day – morning, afternoon and evening.
         </P>
+        <img src="images/cpobservation.png" class="full-width img_padding">
+        <p>Through the observation, the most important thing we noticed was that many students were roaming through the building and looking for studying spaces with their heavy backpacks or food during certain periods of a day. This led us to question how students look for and decide on a spot to study here and how could we make this process more user-friendly. We further determined our problem domain as “studying space in CULC” and decided to follow our user research by a contextual inquiry.</p>
+
+        <h3 style="margin-top: 50px;">Contextual Inquiry</h3>
+        <p>The strategy of our contextual inquiry was to first observe a student or a group of students completing a task – looking for a space to study. After they completed the task, we would approach them and ask questions.</p><br>
+        <p>What we want to learn through contextual inquiry were：What kind of study spaces and facilities do students need? Do they succeed in finding their ideal space? If not, what are the barriers? What problems do students encounter in CULC? How do they solve them?</p><br>
+        <img src="images/cpnotes.png" class="full-width img_padding">
+
+        <h2 style="margin-top: 50px;">#3. Data Analysis</h2>
+        <h3>Affinity Diagram</h3>
+        <p>By affinity mapping, we categorized all the data to help identify the patterns in our findings.</p>
+        <img src="images/cpaffinity.jpg" class="full-width img_padding">
+
+        <h3 style="margin-top: 50px;">Hierachy Task Analysis</h3>
+        <p>Later, we concluded the characteristics of the task, users’ decision points, desired outcomes and the task environment according to our user research We broke the task down into subtasks, expressing the relationships between the parent task and its subtasks through a numbering scheme.</p>
+
       </div>
     </div>
   </div>
 
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
       <div class="sixteen columns">
-      <img src="images/qscproblems2.png" class="full-width">
+      <img src="images/cphta.png" class="full-width img_padding">
       </div>
     </div>
   </div>
 
-  <div class="background tide">
-    <div class="container tide">
+  <div class="background culc">
+    <div class="container culc">
       <div class="row group">
         <div class="offset-by-two twelve columns">
-          <h5>Insight</h5>
-          <h6>The ideal product should provide the most frequently requested information and filter out others. The product should display the information in a clear way which assist students in the just scenario.</h6>
+          <h5>Key Findings</h5>
+          <h6>A good number of students are used to studying at CULC. However, Students have difficulty looking for a spot especially at certain periods like weekday evenings, dead week, days before a break. Students have their own process of choosing a studying spot. Some of them just go with the first spot that they see. Some of them will always check their favorite spots and see whether they are taken. Some students would like to study with others so they can discuss problems in the CULC.</h6>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
-        <h2>#2. User Research on Our Existing Products</h2>
-        <h3>Old QSC Mobile is not satisfying anymore.</h3>
-        <p>
-          QSC team has been dedicating itself to building a mobile solution to the problems of cumbersome information. Before I joined, the former designers and engineers developed QSC Mobile. It was designed to be a one-stop shop of the most important information. 
-          <br>
-          We interviewed our typical users, sent out surveys, organized focus group and read the reviews on APP Store, through which we found strong reasons to redesign QSC Mobile.
+        <h2>#4. Persona</h2>
+        <h3>Behavioral Persona</h3>
+          <p>
+          Rather than traditional personas, we built behavioral ones. Because our users are relatively well-defined. We reviewed the data gathered by user research in detail and established five main criteria that users behave differently.
         <br>
         </p>
       </div>
     </div>
+    <div class="row group">
+       <div class="offset-by-two twelve columns">
+          <img src="images/cppersona1.jpg" class="full-width img_padding">
+          <img src="images/cppersona2.jpg" class="full-width img_padding">
+       </div>
+    </div>
   </div>
 
-  <div class="fullscreen">
-      <img src="images/qsccritique.png" class="sp img_padding">
-  </div>
-
-  <div class="background tide">
-    <div class="container tide">
+  <div class="background culc">
+    <div class="container culc">
       <div class="row group">
         <div class="offset-by-two twelve columns">
-          <h5>Insight</h5>
-          <h6> In a brand new design, Mobile should be easier and more intuitive to use. A new hierarchy should let users focus on the most important information in different scenarios.</h6>
+          <h2 style="margin-top: 30px;">#5. Storyboard</h2>
+        </div>
+        <div class="sixteen columns">
+          <img src="images/cpstoryboard.png" class="full-width img_padding">        
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container tide">
+<!-- Ideation -->
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
-        <h3>
-          Mobilality drives product merge.
-        </h3>
-        <p>
-        In 2014, QSC had four main products:<br><b>Share</b>: an online platform for sharing all kinds of resources.<br><b>Notice</b>: an online platform announcing on-campus activities and official notifications.<br><b>Box</b>: a service providing lightweight cloud storage. Users could download file anywhere with a passcode.<br><b>Mobile</b>: previously introduced as an integration of the schedule of classes, exams, buses as well as grade books.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="sixteen columns">
-      <img src="images/qscproducts.png" class="full-width img_padding">
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <p>
-        Among them, Mobile was the most popular one, while, Notice had pitifully few users. <b>Why Notice was not well accepted when students felt isolated from on-campus events?</b> Except from the fact that effort put into operation and promotion was less, interviews explained to us that students felt troublesome to take out their laptop and visit the website. And it was lighter and far more natural to check the events using smartphones.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="background tide">
-    <div class="container tide">
-      <div class="row group">
-        <div class="offset-by-two twelve columns">
-          <h5>Insight</h5>
-          <h6>We should re-research students' needs, generate typical scenarios, and based on them, design either mobile products or cross-platform products.</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <h2>#3. Competitive Analysis</h2>
-        <h3>What's our core competence from others?</h3>
-        <p>
-          There are various products on the market who share the same features. Among them, Super Timetable and My ZJU are two strong representatives.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-      <img src="images/qscca.png" class="full-width img_padding_small">
-      </div>
-    </div>
-  </div>
-
-  <div class="background tide">
-    <div class="container tide">
-      <div class="row group">
-        <div class="offset-by-two twelve columns">
-          <h5>Insight</h5>
-          <h6>After detailed research and competitative analysis, we were confident to keep our core competence - we are the only official APP and have the only access to all official data - and meanwhile, improved our design and information hierachy to win the users.</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Design-->
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-      <section id="s2" data-anchor="s2">`
+      <section id="s2" data-anchor="s2">
         <h1>IDEATION</h1>
         </section>
-        <h2>#1. Feature Planning</h2>
-        <h3>What information to include?</h3>
+        <h2>#1. Divergence</h2>
+        <h3>Brainstorming</h3>
         <p>
-        Considering all of the information that students seek for school, we picked out information which were both <b>important</b> and <b>frequently required through smartphones</b> based off user research. The product forms of Share, Box, Notice were also sorted out.
-        <br>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="sixteen columns">
-      <img src="images/qscfeatures.jpg" class="full-width img_padding_small">
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <h2>#2. Design Ideation</h2>
-        <h3>Convergence: How to display the information?</h3>
+          Based on the findings of our user research and the design directions driven by them, we moved to the design stage to develop a set of design alternatives. In total, we conducted two rounds of brainstorming to generate ideas that address the problem we found in the user research.<br></br>In the first round of brainstorming, we generated more than 20 ideas to solve different problems students encounter when they study at CULC discovered in user research. Then we sorted them into four groups due to their affinity.</p>
+         <img src="images/cpdiverge.jpg" class="full-width img_padding">
+        <h2>#2. Convergence</h2>
+        <h3>Design Alternatives</h3>
         <p>
-        Organizing so much irrelevant and relevant information together is the first obstacle. We need to strike the balance, which could let users quickly access what they want in the minimum steps while still keep all the information well organized. Below are the three proposed design concepts after the first round of brain storming and sketches.
-        </p>
+          We proposed three design ideas after narrowing down: a mobile app that address overall problems, an installation that presents the activity through a heatmap of the building, and a portable hardware that leads users to a spot or their friends.</p>
       </div>
     </div>
   </div>
 
-  <div class="container tide">
-    <div class="row group">
-      <div class="sixteen columns">
-      <img src="images/qscconcepts.jpg" class="full-width img_padding">
+   <div class="background culc">
+      <div class="container culc">
+         <div class="row group">
+            <div class="sixteen columns">
+                  <img src="images/cp_idea_1.png" class="full-width img_padding">
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <p>
-          <b>Concept 1:</b> This icon-based design with multiple cells improves the visual comprehension of the different inforamtion. <br>
-          <b>Concept 2:</b> This Metro UI styled design lets the information and data become the visual elements and controls. Users see the important information on the homescreen directly.<br>
-          <b>Concept 3:</b> This design with tab bars allows users to quickly navigate between important sections at the app level.<br><br>
-        <h3>1,2, or 3? Let's check users' thoughts.</h3>
-        <p>
-        At first, we were pretty stuck here to decide which of the three we should go further with. A quick low-fidelity user testing saved us from the fights. Six users participated in our simple user testing with paper prototype and gave us comments. They mentioned that <b>Concept 1 was mediocre and safe</b>. <b>Concept 2 showed a good practice for trying to show more on the homescreen</b>. But as iOS users, <b>they felt strange to see a window-styled UI</b>. They gave us inspiration to <b>add another tab to concept 3 to act as a homescreen, which display information itelligently in the scenarios</b>.
-        </p>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="background tide">
-    <div class="container tide">
+   <div class="container culc">
       <div class="row group">
-        <div class="offset-by-two twelve columns">
-          <h5>Insight</h5>
-          <h6>Mobile should have an intelligent way to display the information. That is to say, everytime when users open the APP, their desired information is just on the screen.</h6>
-        </div>
+         <div class="offset-by-two twelve columns">
+               <p>1. The CULC installation is a concept that focuses on tracking the movement and activity within the CULC. The idea is that this installation would be located near one of the main entrances of the building. It would be large so multiple people could use it at the same time. In its idle state, the interface is a heat map of the general activity within the building. When you approach the installation and tap the interface once, a personal screen approaches that visualizes the five floors of the CULC. If you select any of the the floors it visualizes the activity on that floor through heat maps and the layout of the floor. This helps users see what the general activity on that floor. There is also the capabilities of seeing what the overall activity or business of the CULC is and recommends to the user whether they should spend time locating a seat. This feature could sync to the building’s website so users could check online from a remote location to see if they should make the trek to the facility. This tool could be helpful for either studying alone or studying in groups. The idea is fueled by the idea of computer vision.</p>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <h2>#2. Design Ideation</h2>
-        <h3>2nd Convergence: To design an intelligent homescreen.</h3>
-        <p>
-        When we drew the day of a typical user, we found the pattern. Students tend to seek for information about courses and homework when they are several minutes before or in class. And when they are free, they will take out their phone and explore what's happening. This pattern inspired us to design the homescreen in a different way.
-        </p>
+   <div class="background culc">
+      <div class="container culc">
+         <div class="row group">
+            <div class="sixteen columns">
+                  <img src="images/cp_idea_2.png" class="full-width img_padding">
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 
-  <div class="fullscreen">
-      <img src="images/qscscenario.jpg" class="sp img_padding">
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <p>
-        In the proposed three concepts, the homescreen displays the ongoing events.<br><b>Concept 1</b> utilizes a typical calendar view. But in this calendar, Mobile recognizes and displays the important events (like exams, today's classes) and fold others. Also, it automatically suggests events based on users interest.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="background tide">
-    <div class="container tide">
+   <div class="container culc">
       <div class="row group">
-        <div class="sixteen columns">
-          <img src="images/qscconcepts2.jpg" class="full-width img_padding_small">
-          <img src="images/qscconcepts3.jpg" class="full-width img_padding_small">
-        </div>
+         <div class="offset-by-two twelve columns">
+               <p>2. The idea of mobile APP arose from our user research which revealed that students are often unable to find suitable study environments and sometimes could be bewildered by the number of options open to them. At the meantime, when studying in a group, it may be hard for students to communicate the location in CULC. The reasons of developing a mobile APP include,<br></br>● Almost every Georgia Tech student has a mobile phone. An App is accessible for them.<br></br>● According to the user research, students are moving when they look for studying space. An App acts the best as an mobile assistant.<br></br>The core of this idea is that whether a person wants to work alone or in a group, silently or with background noise, in a modern or historic library, this mobile APP will show them matching spaces nearby. Through this APP, students could also locate their group members and reserve a room when they want to study in a group.</p><br>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 
-  <div class="container tide">
+   <div class="background culc">
+      <div class="container culc">
+         <div class="row group">
+            <div class="sixteen columns">
+                  <img src="images/cp_idea_3.png" class="full-width img_padding">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container culc">
+      <div class="row group">
+         <div class="offset-by-two twelve columns">
+               <p>3. The CULC Wizard is a ‘Magic’ pen that could lead users to an empty spot, or to their friends. The look of the product is a pen with a single button and a 360 light integrated. When studying in group, they also consume much time communicating with each other about their location. Instead of presenting detailed information of their options of empty spots, this portable device will simple lead the users to the destination without asking the users to choose from a huge list of options or filters. With simple and straightforward interaction with the pen, users can switch modes between finding spots and friends, and other functions like saving a favourite spot and group members that they would like to study with.</p><br>
+         </div>
+      </div>
+   </div>
+
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
-        <p>
-        <b>Concept 2</b> also shows the ongoing and important events with a piechart to indicate the progress and remaining days. Where there is no events going on, it will suggest users explore on-campus events and go to the third tab.
-        </p>
-        <p>
-        <b>Concept 3</b> is similar to Concept 1. But everything is organized under category instead of on a timeline.
-        </p>
-        <p style="margin-bottom: 70px;">
-        <br>Finally we decided to choose Concept 2 because of technical issues. As a student organization, QSC doesn't have the ability to develop complicated algorithms used in Personalized Recommender Systems.
-        </p>
+        <h2 style="margin-top: 50px;">#3. Decision</h2>
+        <h3>Final Idea</h3>
+        <img src="images/cp_IMG_2740.jpg" class="full-width img_padding">
+         <p>From an in-class sprint, we received a lot of feedback from our classmates, who are also the our target users. Finally, after assessing all the dimensions of all the three solutions, we decided to go further with the heatmap based design. And out target user will interact with the design on kiosks placed in CULC.</p>
       </div>
     </div>
   </div>
 
-<!-- Interaction-->
+   <div class="background culc">
+      <div class="container culc">
+         <div class="row group">
+            <div class="sixteen columns">
+               <img src="images/cpassess.png" class="full-width img_padding">
+            </div>
+         </div>
+      </div>
+   </div>
 
-  <div class="container tide">
+<!-- Design -->
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
       <section id="s3" data-anchor="s3">
-        <h1>INTERACTION</h1>
+        <h1>DESIGN</h1>
         </section>
-        <h2>#1. Information Architecture</h2>
-        <h3>We connected different features to make them a whole.</h3>
-        <p>Below is the information architecture and the feature structure of the new QSC Mobile. We planned the structure in a way which could solve problems presented in the scenarios.</p>
+        <h3>Work Flow</h3>
+        <p>
+          First, we decided the two main features of our kiosk - help students find study spots which meets their requirements quicker, and let students reserve instant-approved rooms in CULC. Based on the two fuctions, I turned our rough sketch introduced before into a user experience flow map.</p>
       </div>
     </div>
   </div>
 
-  <div class="container tide">
-    <div class="row group">
-      <div class="sixteen columns">
-        <img src="images/qscia.jpg" class="full-width img_padding_small">
+   <div class="background culc">
+      <div class="container culc">
+         <div class="row group">
+            <div class="sixteen columns">
+               <img src="images/cpflow.png" class="full-width img_padding">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container culc">
+      <div class="row group">
+         <div class="offset-by-two twelve columns">
+          <h3>Interface</h3>
+           <p>Later on, I designed the interface based on the user experience flow, which could let students complete their tasks easily.</p><br>
+         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-        <h2>#2. Wireframing</h2>
-        <h3>The interactions were logic and smooth.</h3>
-        <p>Below is the main interaction of Mobile. Please see the final prototype for more details.</p>
+   <div class="background culc">
+      <div class="container culc">
+         <div class="row group">
+            <div class="sixteen columns">
+               <img src="images/cplice.png" class="full-width img_padding">
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 
-  <div class="fullscreen">
-      <img src="images/qscwf.png" class="full-width img_padding">
-  </div>
-
-<!-- Results-->
-
-  <div class="container tide">
+  <div class="container culc">
     <div class="row group">
       <div class="offset-by-two twelve columns">
       <section id="s4" data-anchor="s4">
-        <h1>RESULTS</h1>
+        <h1>PROTOTYPE</h1>
         </section>
-        <h2>Interface Design</h2>
-        <h3>Style of Mobile</h3>
-        <p>For layout, we used tab bars which is a common practice of iOS Apps. Black and white are used the most because we defined Mobile as a personal assitant for students. Colorful interfaces would attract so much attention.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container tide">
-    <div class="row group">
-      <div class="sixteen columns">
-        <img src="images/qscf1.png" class="sp">
-        <img src="images/qscf2.png" class="sp">
-        <img src="images/qscf3.png" class="sp">
-        <img src="images/qscf4.png" class="sp">
-        <img src="images/qscf5.png" class="sp">
-        <img src="images/qscf6.png" class="sp">
-        <img src="images/qscf7.png" class="sp">
-        <img src="images/qscf8.png" class="sp">
-        <img src="images/qscf9.png" class="sp">
-        <img src="images/qscf10.png" class="sp">
-        <img src="images/qscf11.png" class="sp">
-        <img src="images/qscf12.png" class="sp">
-      </div>
-    </div>
-  </div>
-
-  <div class="background tide" style="background-color: #84BDFF;">
-    <div class="container tide">
-      <div class="row group">
-        <div class="sixteen columns">
-          <img src="images/qscbanner.jpg" class="sp img_padding">
-        </div>
-        <div class="offset-by-two twelve columns">
-          <h5>Achievements</h5>
-          <h6 style="color: white">In 2016, Mobile won the Second Prize in China Collegiate Computing Contest. <br>Till Oct. 2016, Mobile has more than <b>100,000</b> users and <b>18,000</b> daily active users. <b>61%</b> target students in Zhejiang University are using Mobile now.<br>We really have turned Mobile into a personal assistant of every student of Zhejiang Univeristy.<br><br></h6>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Reflection -->
-  <div class="container tide">
-    <div class="row group">
-      <div class="offset-by-two twelve columns">
-      <section id="s5" data-anchor="s5">
-        <h1>REFLECTION</h1>
-        </section>
-        <h3>I need to value every single design decision of mine.</h3>
-        <p>QSC is a student organization and every member works without pay at the spare time. So the development turns out to be very expensive. In this situation, as a designer, I must make sure that my design decisions are supported and my interfaces are pixel-perfect. Only in this case could our engineers dedicate themselves into a more efficient development process.</p>
-
-        <h3><br>My job defination as a UX/UI Designer is brodened.</h3>
-        <p>In our team, there is no product manager so that as the UX Lead, I took the responsibility partially. Apart from conducting user research, designing workflows and interfaces, I tried to understand the market and our competitors, communicated with engineers and staff of school, tried to understand the technical issus and guide the product through iteratations of the design. Finally, we made it to deliver this amazing product.</p>
-
-        <h3><br>Being a team player is amazing.</h3>
-        <p>The three yeas in QSC was my most precious memory. I have had the most valuable opportunity to expose myself to so many experiences and learn from each other. I started as a graphic designer and came into contact with the world of digital product design. Thanks to the engineers, designers, product operation folks that I've worked with.</p>
+        <p>Finally, we built the prototype using HTML/CSS/JavaScript. Try it <a href="https://qcmu.github.io/kiwiCULC/" target="_blank">here!</a>
+        <p>I've also learned motion design using Principle. An example is shown below.</p>
+        <video controls="controls" name="animation" class="full-width img_padding" src="images/animation.mov"></video>
         <div class="division2"></div>
       </div>
     </div>
   </div>
+
+</div>
+
+
 
 <!-- footer -->
    <footer>
@@ -545,7 +410,7 @@
     fix = "sticky_fix";
 
     $(window).scroll(function() {
-        if( $(this).scrollTop() > 750 ) {
+        if( $(this).scrollTop() > 675 ) {
             mn.addClass(mns);
             intro.addClass(fix);
         } else {
@@ -574,21 +439,18 @@
 
         $(window).scroll(function() {
             var windscroll = $(window).scrollTop();
-            if (windscroll >= 1780 && windscroll <= 6900) {
-                $('#s2 a, #s3 a, #s4 a, #s5 a').removeClass('current');
+            if (windscroll >= 2100 && windscroll <= 8200) {
+                $('#s2 a, #s3 a, #s4 a').removeClass('current');
                 $('#s1 a').addClass('current');
-            } else if (windscroll >= 6900 && windscroll <= 12100) {
-                $('#s1 a, #s3 a, #s4 a, #s5 a').removeClass('current');
+            } else if (windscroll >= 8200 && windscroll <= 12700) {
+                $('#s1 a, #s3 a, #s4 a').removeClass('current');
                 $('#s2 a').addClass('current');
-            } else if (windscroll >= 12100 && windscroll <= 15100) {
-                $('#s1 a, #s2 a, #s4 a, #s5 a').removeClass('current');
+            } else if (windscroll >= 12700 && windscroll <= 14800) {
+                $('#s1 a, #s2 a, #s4 a').removeClass('current');
                 $('#s3 a').addClass('current');
-            } else if (windscroll >= 15100 && windscroll <= 23850) {
-                $('#s1 a, #s2 a, #s3 a, #s5 a').removeClass('current');
+            } else if (windscroll >= 14800 && windscroll <= 23850) {
+                $('#s1 a, #s2 a, #s3 a').removeClass('current');
                 $('#s4 a').addClass('current');
-            } else if (windscroll >= 23850) {
-                $('#s1 a, #s2 a, #s3 a, #s4 a').removeClass('current');
-                $('#s5 a').addClass('current');
             } else {
                 $('#nav a.current').removeClass('current');
             }
