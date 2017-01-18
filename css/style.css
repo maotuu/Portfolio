@@ -164,15 +164,6 @@ p {
 	float: right;
 }
 
-.caption {
-	color: #aaa;
-	font-family: Circular;
-	font-size: 14px;
-	margin-top: -20px;
-	margin-bottom: 50px;
-	text-align: center;
-}
-
 .background {
 	background-size: cover;
 	display: inline-block;
@@ -192,10 +183,6 @@ p {
 
 .img_padding_small {
 	margin: 15px auto 30px auto;
-}
-
-.img_padding_caption{
-	margin: 15px auto 0px auto;	
 }
 
 .iphone {
@@ -845,24 +832,10 @@ html {
 		text-align: left;
 	}
 
-	.readmore img {
-		float: left;
-		width: 100%;
-	}
-
-	.projectdescription{
-		width: 80%;
-		margin: auto;
-	}
 
 	.scrollToTop {
 		bottom:25px;
 		right:5px;
-	}
-
-	.subtitle {
-		font-size: 18px;
-		padding-top: 5px;
 	}
 
 }
@@ -882,18 +855,10 @@ html {
 		display: none;
 	}
 
-	.projectdescription{
-		width: 90%;
-		margin: auto;
-	}
-
 	.row.group.index{
 		padding-bottom: 0px;
 	}
 
-	.social {
-		display: none;
-	}
 }
 
 /* #Larger than desktop */
