@@ -722,24 +722,18 @@ nav a:hover {
 }
 
 .project-prev {
-  border-width: 0 .5px 0 0;
-  border-color: #f4f4f4;
-  border-style: solid;
   text-align: left;
   height: 100px;
-  width: 35.85%;
+  width: 36%;
   color: #ffffff;
   padding-left: 14%;
   float: left;
 }
 
 .project-next {
-  border-width: 0 0 0 .5px;
-  border-color: #f4f4f4;
-  border-style: solid;
   text-align: right;
   height: 100px;
-  width: 35.85%;
+  width: 36%;
   color: #ffffff;
   padding-right: 14%;
   float: left;
@@ -751,15 +745,18 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 720px) {
+
 	.project-prev {
-	  width: 100%;
+	  width: 86%;
+	  padding-left: 14%;
+	  padding-right: 0;
 	}
 
 	.project-next {
 	  text-align: left;
-	  width: 100%;
+	  width: 86%;
 	  padding-left: 14%;
-	  padding-right: 0;
+	  padding-right: 0%;
 	}
 }
 
