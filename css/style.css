@@ -961,9 +961,5 @@ html {
 /* #Small Devices */
 @media only screen and (max-width: 750px) {
 
-	.row.group.index{
-		padding-bottom: 0px;
-	}
-
 }
 
