@@ -44,7 +44,20 @@
 /* Larger than 1800px */
 @media (min-width: 1800px) {
     .container {
+    max-width: 1200px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .container {
     max-width: 1400px;
+    }
+}
+
+/* Larger than 1800px */
+@media (min-width: 1800px) {
+    .container {
+    max-width: 1200px;
     }
 }
 
