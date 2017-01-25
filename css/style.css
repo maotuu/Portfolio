@@ -3,7 +3,26 @@
 
 /* #Basic elements
 ================================================== */
+@font-face {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
 
+@font-face {
+	font-family: 'Arvo', serif;
+}
+
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+* {
+	color: #4A4A4A;
+	-webkit-font-smoothing: antialiased;
+	margin:0;
+    padding: 0;
+}
 
 a {
 	color: #313131;
@@ -30,7 +49,7 @@ body {
   background-color: #FF2851;
   color: #FFFFFF;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
   letter-spacing: 0.4px;
   text-align: center;
   font-size: 15px;
@@ -71,7 +90,7 @@ body {
 h1 {
 /*case study titles*/
 /*index*/
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	font-size: 25px;
 	color: #FFFFFF;
 	letter-spacing: 1px;
@@ -85,7 +104,7 @@ h1 {
 h2 {
 /*case study subtitle*/
 	color: #ffffff; 
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	letter-spacing: 0px; 
 	font-size: 20px;
 	margin-top: 0px;
@@ -95,7 +114,7 @@ h2 {
 
 h3 {
 /*work intro titles*/
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	letter-spacing: 0px;
 	font-size: 18px;
 }
@@ -104,14 +123,14 @@ h5 {
 /*index case study roles*/
 /*"View case study"*/
 /*about*/
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	letter-spacing: 0px;
 	color: #FF2851;
 	font-size: 18px;
 }
 
 h7{
-	font-family: 'Open Sans', sans-serif;	
+	font-family: Open Sans;
 	color: #4F4F4F;
 	font-size: 12px;
 	padding-top: 0px;
@@ -127,7 +146,7 @@ iframe {
 
 p {
 	color: #4F4F4F;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Open Sans;
     font-size: 16px;
     line-height: 26px;
 	display: block;
@@ -168,7 +187,7 @@ p {
 }
 
 li {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat;
 	display: inline-block;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -246,7 +265,7 @@ ul a {
 /*nav*/
 
 nav {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat;
 	font-weight: 700;
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -259,7 +278,10 @@ nav a {
 }
 
 nav a:hover {
-	box-shadow: inset 0 -6px 0 #FF2851;
+	border-color: #FF2851;
+	border-style: solid;
+	border-width: 0 0 0px;
+	box-shadow: inset 0 -4px 0 #FF2851;
 	color: inherit;
 	transition: .5s ease-in-out;	
     -moz-transition: opacity .5s ease-in-out;
@@ -270,7 +292,7 @@ nav a:hover {
 	border-color: #FF2851;
 	border-style: solid;
 	border-width: 0 0 0px;
-	box-shadow: inset 0 -2px 0 #FF2851;
+	box-shadow: inset 0 -4px 0 #FF2851;
 	color: inherit;
 }
 
@@ -322,7 +344,7 @@ nav a:hover {
 
 #work h1{
 	color: white;
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	font-size: 20px;
 	left: 0;
 	line-height: 20px;
@@ -334,7 +356,7 @@ nav a:hover {
 
 #work h2{
 	color: white;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Open Sans;
 	font-size: 15px;
 	letter-spacing: 0.1;
 	left: 10%;
@@ -347,7 +369,7 @@ nav a:hover {
 
 #work h3{
 	color: white;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Open Sans;
 	font-size: 14px;
 	left: 0;
 	line-height: 20px;
@@ -497,7 +519,7 @@ nav a:hover {
 ===================================================================*/
 .wrapper h1{
 /*Heading1*/
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat;
 	font-weight: 100;
 	font-size: 28px;
 	letter-spacing: 1px;
@@ -508,7 +530,7 @@ nav a:hover {
 
 .wrapper h2{
 /*heading2*/
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	letter-spacing: 0px;
 	font-size: 15px;
 	text-align: left;
@@ -517,7 +539,7 @@ nav a:hover {
 
 .wrapper h3{
 /*emphasize*/
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat;
 	color: #4F4F4F;
 	font-size: 25px;
 	margin-bottom: 8px;
@@ -525,7 +547,7 @@ nav a:hover {
 
 .wrapper h4{
 /*titles in intro*/
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	letter-spacing: 0px;
 	font-size: 20px;
 	margin-bottom: 0px;
@@ -533,7 +555,7 @@ nav a:hover {
 
 .wrapper h5{
 /*emphasize*/
-	font-family: 'Arvo', serif;
+	font-family: Arvo;
 	letter-spacing: 0px;
 	font-size: 15px;
 	text-align: left;
@@ -544,7 +566,7 @@ nav a:hover {
 
 .wrapper h6{
 /*emphasize*/
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat;
 	color: #4F4F4F;
 	font-size: 20px;
 	margin-bottom: 40px;
@@ -556,7 +578,7 @@ nav a:hover {
 
 .caption{
 	color: #909090;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Open Sans;
     font-size: 13px;
 	letter-spacing: 0.2;
 	display: block;
@@ -831,7 +853,7 @@ html {
 
 .overlay h3{
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     font-size: 17px;
     left: 0;
     line-height: 20px;
@@ -940,4 +962,3 @@ html {
 @media only screen and (max-width: 750px) {
 
 }
-
