@@ -568,7 +568,7 @@ nav a:hover {
 	font-size: 15px;
 	text-align: left;
     margin-bottom: 0px;
-    margin-top: 40px;
+    margin-top: 30px;
     color: #FF2851;
 }
 
@@ -577,7 +577,6 @@ nav a:hover {
 	font-family: Montserrat;
 	color: #4F4F4F;
 	font-size: 20px;
-	margin-bottom: 40px;
 }
 
 .fullscreen{
