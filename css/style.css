@@ -387,6 +387,12 @@ nav a:hover {
     width: 100%;
 }
 
+@media only screen and (max-width: 980px) {
+#work h2{
+	display: none;
+}
+}
+
 .preview{
 	margin-bottom:30px;
 	position: relative;	
