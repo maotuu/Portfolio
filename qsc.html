@@ -549,16 +549,37 @@
     });
 </script>
 
+<script>
+  
+</script>
+
+
 <!-- Change active nav item on scroll -->
 <script>
+
+    // var top1 = $("#s1").offset().top - 110;
+    // var top2 = $("#s2").offset().top - 110;
+    // var top3 = $("#s3").offset().top - 110;
+    // var top4 = $("#s4").offset().top - 110;
+    // var top5 = $("#s5").offset().top - 110;
+
+
 
     var top1 = $(".section1").offset().top - 110;
     var top2 = $(".section2").offset().top - 110;
     var top3 = $(".section3").offset().top - 110;
     var top4 = $(".section4").offset().top - 110;
     var top5 = $(".section5").offset().top - 110;
-
     console.log(top1,top2,top3,top4,top5);
+    $(window).load(function() {
+      top1 = $(".section1").offset().top - 110;
+      top2 = $(".section2").offset().top - 110;
+      top3 = $(".section3").offset().top - 110;
+      top4 = $(".section4").offset().top - 110;
+      top5 = $(".section5").offset().top - 110;
+      console.log(top1,top2,top3,top4,top5);
+    });
+    
 
     $('#nav a').on('click', function() {
 
