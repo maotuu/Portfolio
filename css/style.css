@@ -316,7 +316,7 @@ nav a:hover {
 
 .line{
 	background-color: #EDEDED;
-	height: 1px;
+	height: 2px;
 	margin-top: 10px;
 }
 
@@ -412,6 +412,10 @@ nav a:hover {
 	background-color: #C4B7F6;
 }
 
+.previewss{
+	background-color: #01579B;
+}
+
 .preview img{
 	opacity: 1;
 	-o-transition: 300ms;
@@ -502,6 +506,16 @@ nav a:hover {
   background-color: #B09EF3;
 }
 
+#nav-apsara {
+  background-color: #0277BD;
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out;
+}
+#nav-apsara:hover {
+  background-color: #01579B;
+}
 /* #Scroll to top icon
 ================================================== */
 
@@ -598,6 +612,34 @@ nav a:hover {
 	text-align: right;
 	margin-top: -25px;
 	padding-bottom: 30px;
+}
+/*apsara=======================================================*/
+.background.apsara {
+	background-color: #F7F6F4;
+}
+
+.banner_apsara {
+	background-color: #01579B;
+	background-size: cover;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.container.apsara a {
+	color: #01579B;
+	-webkit-transition: color 0.2s;
+	-moz-transition:    color 0.2s;
+	-ms-transition:     color 0.2s;
+	-o-transition:      color 0.2s;
+	transition:         color 0.2s;
+}
+
+.container.apsara a:hover {	
+	color: #FF2581; 
+}
+
+.container.apsara h1,.container.apsara h2{
+	color: #01579B;
 }
 
 /*qscmobile=======================================================*/
