@@ -577,12 +577,16 @@ nav a:hover {
 	font-family: Montserrat;
 	color: #4F4F4F;
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .fullscreen{
 	max-width: 1800px;
 	margin:auto;
+}
+
+.background h6{
+	margin-bottom: 30px;
 }
 
 .caption{
