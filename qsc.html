@@ -578,13 +578,13 @@
             if (windscroll >= top1 && windscroll <= top2) {
                 $('#s2 a, #s3 a, #s4 a, #s5 a').removeClass('current');
                 $('#s1 a').addClass('current');
-            } else if (windscroll >= top2 && windscroll <= top3) {
+            } else if (windscroll >= top2 && windscroll < top3) {
                 $('#s1 a, #s3 a, #s4 a, #s5 a').removeClass('current');
                 $('#s2 a').addClass('current');
-            } else if (windscroll >= top3 && windscroll <= top4) {
+            } else if (windscroll >= top3 && windscroll < top4) {
                 $('#s1 a, #s2 a, #s4 a, #s5 a').removeClass('current');
                 $('#s3 a').addClass('current');
-            } else if (windscroll >= top4 && windscroll <= top5) {
+            } else if (windscroll >= top4 && windscroll < top5) {
                 $('#s1 a, #s2 a, #s3 a, #s5 a').removeClass('current');
                 $('#s4 a').addClass('current');
             } else if (windscroll >= top5) {
