@@ -558,10 +558,13 @@
     var top4 = $(".section4").offset().top - 110;
     var top5 = $(".section5").offset().top - 110;
 
+    console.log(top1,top2,top3,top4,top5);
+
     $('#nav a').on('click', function() {
 
         var scrollAnchor = $(this).attr('data-scroll'),
-                scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 80;
+            scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 80;
+
 
         $('body,html').animate({
             scrollTop: scrollPoint
