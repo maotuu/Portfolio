@@ -18,6 +18,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
   <!-- Google Analytics
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>
@@ -30,6 +32,17 @@
     ga('send', 'pageview');
 
   </script>
+    <script>
+        //   $(window).load(function() {
+        //    $('#loader').addClass('loaded');
+        //    $('#loader-wrapper').addClass('loaded');
+        // });
+    $(document).ready(function() {
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 3000);
+    });
+    </script>
 </head>
 
 <body>
@@ -86,6 +99,8 @@
 
   </div>
 </div>
+
+
 
 <div id="left">
   <div id="particles-js">
@@ -296,7 +311,7 @@
 });
 </script>
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 <script>
 jQuery(function($) {
   var doAnimations = function() {
@@ -316,18 +331,6 @@ jQuery(function($) {
   $(window).trigger('scroll');
 });
 </script>
-<script>
-    //   $(window).load(function() {
-    //    $('#loader').addClass('loaded');
-    //    $('.ajexLoad').addClass('loaded');
-    // });
-$(document).ready(function() {
- 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 3000);
- 
-});
-</script>
+
 </body>
 </html>
