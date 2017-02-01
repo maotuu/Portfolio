@@ -116,7 +116,7 @@ body.loading .modal {
     display: block;
 }
 
-#loader {
+.loader {
     position:   fixed;
     z-index:    1000;
     top:        0;
@@ -124,7 +124,6 @@ body.loading .modal {
     height:     100%;
     width:      100%;
     background: #fff;
-
 }
 
 .loaded {
