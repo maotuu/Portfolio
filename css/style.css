@@ -119,8 +119,10 @@ p {
 
 #loader {
 	  position: absolute;
+	  z-index: 5;
 	  top: 50%;
 	  left: 50%;
+	  width: 40px;
 	  margin: -16px 0 0 -16px;
 }
 
@@ -146,6 +148,7 @@ p {
   -webkit-animation: shadow .5s infinite;
           animation: shadow .5s infinite;
 }
+
 @keyframes bounce {
   0% {
     -webkit-transform: scale(1, 1);
