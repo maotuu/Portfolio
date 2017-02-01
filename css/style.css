@@ -124,7 +124,7 @@ p {
 	  margin: -16px 0 0 -16px;
 }
 
-svg {
+#loader svg {
   position: relative;
   z-index: 10;
   height: 40px;
