@@ -34,12 +34,12 @@
 
 <body>
 
-<div id="loader">
-  <div class="ajaxLoad">
+<div id="loader-wrapper">
+  <div id="loader">
    
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
        x="0px" y="0px" viewBox="0 0 1498.2 1265.9" enable-background="new 0 0 1498.2 1265.9" xml:space="preserve">
-    <g>
+      <g>
       <path fill-rule="evenodd" clip-rule="evenodd" fill="#FF9900" d="M890.8,920c26,29.6,83.7,79,122,96.6c0,0-83,3.1-89.2,84.2
         c108.6-148.5,240.7,17.2,185.2,97.9c69.1-48.2,18.3-126.4-6.7-147.9c0,0,69.9,45.4,63.1,117.8c53.4-132.4-119.4-144.6-228.9-261.6
         C929.5,903.1,903.7,902.9,890.8,920L890.8,920z"/>
@@ -83,7 +83,7 @@
         c3.2,0,5.8-2.6,5.8-5.8C1271.3,127.4,1268.8,124.8,1265.6,124.8L1265.6,124.8z"/>
     </g>
     </svg>
-    
+
   </div>
 </div>
 
@@ -91,11 +91,9 @@
   <div id="particles-js">
     <div class="left-container">
         <img class="profile-img animated fadeIn" src="images/profile.png">
-      <div class="lefthero">
         <h1 style="color: #FF2851; " class="animated fadeIn two">
         Hey! I'm Xinyu <span style="color: #bfbfbf;">/Hsin-Yu/</span>.
         <br>Crafting delightful experiences.</h1>
-      </div>
         <p>Master student in HCI @ Georgia Tech.<br>Seeking UX Design Internship in summer 17'.<br>With core design skills and a Design+Tech+Business background.
         <div class="resume animated fadeIn three">
           <a href="file/Xinyu_LI_resume.pdf" class="btn paper-raise">
@@ -103,17 +101,16 @@
           </a>
         </div>
         <div class="sociallinks">
-        <ul>
-          <li><a href="https://www.instagram.com/xinyuuuuuuuuuuu/" target="_blank"><img src="images/instagram.png"></a></li>
-          <li><a href="https://dribbble.com/xinyuli" target="_blank"><img src="images/dribbble.png"></a></li>
-          <li><a href="https://medium.com/@lixinyu513" target="_blank"><img src="images/medium.png"></a></li>
-          <li><a href="https://www.linkedin.com/in/xinyuuu" target="_blank"><img src="images/linkedin.png"></a></li>
-          <li><a href="mailto:lixinyu513@gmail.com?subject=Hello" target="_blank"><img src="images/email.png"></a></li>
-        </ul>
+          <ul>
+            <li><a href="https://www.instagram.com/xinyuuuuuuuuuuu/" target="_blank"><img src="images/instagram.png"></a></li>
+            <li><a href="https://dribbble.com/xinyuli" target="_blank"><img src="images/dribbble.png"></a></li>
+            <li><a href="https://medium.com/@lixinyu513" target="_blank"><img src="images/medium.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/xinyuuu" target="_blank"><img src="images/linkedin.png"></a></li>
+            <li><a href="mailto:lixinyu513@gmail.com?subject=Hello" target="_blank"><img src="images/email.png"></a></li>
+          </ul>
         </div>
-      </div>
-</div>
-
+    </div>
+  </div>
 </div>
 
 <div id="right">
@@ -321,9 +318,9 @@ jQuery(function($) {
 </script>
 <script>
       $(window).load(function() {
-       $('#loader').addClass('loaded');
-       $('.ajexLoad').addClass('loaded');
+       $('body').addClass('loaded');
     });
 </script>
+
 </body>
 </html>

@@ -107,23 +107,25 @@ p {
 
 }
 /*loading*/
-
-#loader {
+#loader-wrapper{
     position:   fixed;
     z-index:    1000;
     top:        0;
     left:       0;
     height:     100%;
     width:      100%;
-    background: #fff;
+    background-color: #fff;
 }
 
-.ajaxLoad {
-  position: absolute;
+#loader {
+	display: block;
+  position: relative;
   top: 50%;
   left: 50%;
   margin: -16px 0 0 -16px;
+  z-index: 1500;
 }
+
 
 svg {
   position: relative;
@@ -133,7 +135,7 @@ svg {
           animation: bounce .5s cubic-bezier(0.51, 0.23, 0.02, 0.96) infinite;
 }
 
-.ajaxLoad:after {
+#loader:after {
   position: absolute;
   bottom: 2px;
   left: 20px;
@@ -146,6 +148,7 @@ svg {
   -webkit-animation: shadow .5s infinite;
           animation: shadow .5s infinite;
 }
+
 @keyframes bounce {
   0% {
     -webkit-transform: scale(1, 1);
@@ -190,13 +193,19 @@ svg {
 }
 
 .loaded #loader{
-	visibility: hidden;
-}
-
-.loaded .ajaxLoad{
 	opacity: 0;
     -webkit-transition: all 0.3s ease-out; 
             transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper{
+	visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+
+-webkit-transition: all 0.3s 0.6s ease-out; 
+        transition: all 0.3s 0.6s ease-out;
 }
 
 /* #Generic styles
@@ -418,11 +427,15 @@ ul a {
      color: #FFffff;
 }
 
+.left h1{
+color: #ff2851;
+}
+
 .work h1{
   margin-left: 40px;
   margin-bottom: 10px;
   opacity: 0;
-  color: #fff;
+  color: #ffffff;
   font-family: Open Sans;
   font-size: 14px;
   line-height: 12px;     
