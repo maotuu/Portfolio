@@ -108,14 +108,6 @@ p {
 }
 /*loading*/
 
-body.loading {
-    overflow: hidden;
-}
-
-body.loading .modal {
-    display: block;
-}
-
 #loader {
     position:   fixed;
     z-index:    1000;
@@ -124,16 +116,6 @@ body.loading .modal {
     height:     100%;
     width:      100%;
     background: #fff;
-}
-
-.loaded #loader{
-	visibility: hidden;
-}
-
-.loaded .ajaxLoad{
-	opacity: 0;
-    -webkit-transition: all 0.3s ease-out; 
-            transition: all 0.3s ease-out;
 }
 
 .ajaxLoad {
@@ -207,6 +189,15 @@ svg {
   }
 }
 
+.loaded #loader{
+	visibility: hidden;
+}
+
+.loaded .ajaxLoad{
+	opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
+}
 
 /* #Generic styles
 ================================================== */
