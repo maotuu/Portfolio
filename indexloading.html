@@ -33,16 +33,19 @@
 
   </script>
     <script>
-        //   $(window).load(function() {
-        //    $('#loader').addClass('loaded');
-        //    $('#loader-wrapper').addClass('loaded');
-        // });
-    $(document).ready(function() {
-        setTimeout(function(){
-            $('#loader').addClass('loaded');
-            $('#loader-wrapper').addClass('loaded');
-        }, 3000);
+    $(window).bind("load", function() {
+
+        "use strict";
+        
+        $("#loader-wrapper").fadeOut(1000);
     });
+
+    // $(document).ready(function() {
+    //     setTimeout(function(){
+    //         $('#loader').addClass('loaded');
+    //         $('#loader-wrapper').addClass('loaded');
+    //     }, 3000);
+    // });
     </script>
 </head>
 
@@ -100,8 +103,6 @@
 
   </div>
 </div>
-
-
 
 <div id="left">
   <div id="particles-js">
