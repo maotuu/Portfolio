@@ -109,7 +109,7 @@
             <li><a href="mailto:lixinyu513@gmail.com?subject=Hello" target="_blank"><img src="images/email.png"></a></li>
           </ul>
         </div>
-    </div>
+      </div>
   </div>
 </div>
 
@@ -316,13 +316,18 @@ jQuery(function($) {
   $(window).trigger('scroll');
 });
 </script>
-
 <script>
-      $(window).load(function() {
-       $('#loader-wrapper').addClass('loaded');
-       $('#loader').addClass('loaded');
-    });
+    //   $(window).load(function() {
+    //    $('#loader').addClass('loaded');
+    //    $('.ajexLoad').addClass('loaded');
+    // });
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+ 
+});
 </script>
-
 </body>
 </html>
