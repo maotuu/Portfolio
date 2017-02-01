@@ -116,7 +116,7 @@ body.loading .modal {
     display: block;
 }
 
-.loader {
+#loader {
     position:   fixed;
     z-index:    1000;
     top:        0;
@@ -126,8 +126,14 @@ body.loading .modal {
     background: #fff;
 }
 
-.loaded {
-    visibility: hidden;
+.loaded #loader{
+	visibility: hidden;
+}
+
+.loaded .ajaxLoad{
+	opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
 }
 
 .ajaxLoad {
