@@ -128,8 +128,7 @@ p {
 
 
 svg {
-  position: relative;
-  z-index: 10;
+  position: absolute;
   height: 40px;
   -webkit-animation: bounce .5s cubic-bezier(0.51, 0.23, 0.02, 0.96) infinite;
           animation: bounce .5s cubic-bezier(0.51, 0.23, 0.02, 0.96) infinite;
