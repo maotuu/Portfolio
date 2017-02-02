@@ -331,7 +331,7 @@ ul a {
      right: 5%;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1180px) {
 
 .left-container{
    bottom: 5%;
@@ -365,7 +365,7 @@ ul a {
      opacity: 1;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1180px) {
 
 #left{
      width:100%;
