@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
@@ -202,18 +204,19 @@
       </div>
   </div>
 
-   <div class="background culc">
       <div class="container culc">
-            <div class="offset-by-one ten columns">
-                  <img src="images/cp_idea_1.png" class="u-full-width img_padding_small">
-                  <div class="caption">The kiosk presents the activity through a heat map</div>
-                  <img src="images/cp_idea_2.png" class="u-full-width img_padding">
-                  <div class="caption">The mobile APP addresses overall problems</div>
-                  <img src="images/cp_idea_3.png" class="u-full-width img_padding_small">
-                  <div class="caption">The magic pen leads users to a spot</div>
+            <div class="twelve columns">
+            <
+              <div class="carousel img_padding">
+                  <div><img src="images/cp_idea_1.png" class="u-full-width img_padding_small">
+                  <div class="caption">The kiosk presents the activity through a heat map</div></div>
+                  <div><img src="images/cp_idea_2.png" class="u-full-width img_padding">
+                  <div class="caption">The mobile APP addresses overall problems</div></div>
+                  <div><img src="images/cp_idea_3.png" class="u-full-width img_padding_small">
+                  <div class="caption">The magic pen leads users to a spot</div></div>
+                </div>
             </div>
       </div>
-   </div>
 
   <div class="container culc">
       <div class="offset-by-one ten columns">
@@ -244,10 +247,10 @@
         </section>
           <h3>Design Guidelines</h3>
            <p>Designing a kiosk is a different paradigm than we, as desktop and mobile application designers and developers, are used to. In order for a kiosk user interface to be “touch-friendly,” it must allow users to navigate comfortably using only their fingers without the need for a mouse and keyboard. There are some principles that I concluded and kept in mind when designing the system. These are concluded from investigating existing kiosks and articles. These principles provided good rationale for a lot of design decisions involved in this sprint.</p>
-           <p><b style="color: #00ACE3;">Keep everything simple</b><br>As a kiosk, it is not supposed to engage users when they complete a task. I should keep everything simple and easy so that users could complete the task in the minimum steps. Besides, users also tend to not read blocks of text very closely, so I need to substitute large paragraphs of information with icons, pictures, sounds, and animations when possible.</p>
-           <p><b style="color: #00ACE3;">Buttons should be “fat finger” friendly</b><br>To prevent “fat finger” problems, I need to make buttons larger with sufficient spacing between. 
-           <p><b style="color: #00ACE3;">Screens should be clean, free from clutter and too many options on a single screen</b><br>A cluttered kiosk user interface will distract the user from completing their tasks. Clutter can include any unnecessary elements, which distract users from their intended purpose. So in our design, I avoided soliciting the user for too much information on a single screen. </p>
-           <p><b style="color: #00ACE3;">The kiosk should be snappy and respond as quick as possible</b><br>If users interact with our system, but they find nothing happens, they get confused. If there is some processing or working logic that is happening then some sort of indicator needs to be relayed to users.</p>
+           <p><b style="color: #00ACE3;">Simple</b><br>As a kiosk, it is not supposed to engage users when they complete a task. I should keep everything simple and easy so that users could complete the task in the minimum steps. Besides, users also tend to not read blocks of text very closely, so I need to substitute large paragraphs of information with icons, pictures, sounds, and animations when possible.</p>
+           <p><b style="color: #00ACE3;">Big Buttons</b><br>To prevent “fat finger” problems, I need to make buttons larger with sufficient spacing between. 
+           <p><b style="color: #00ACE3;">Clean</b><br>A cluttered kiosk user interface will distract the user from completing their tasks. Clutter can include any unnecessary elements, which distract users from their intended purpose. So in our design, I avoided soliciting the user for too much information on a single screen. </p>
+           <p><b style="color: #00ACE3;">Motion</b><br>The kiosk should be snappy and respond as quick as possible. If users interact with our system, but they find nothing happens, they get confused. If there is some processing or working logic that is happening then some sort of indicator needs to be relayed to users.</p>
         <h3>Work Flow</h3>
         <p>
           The two main features of our kiosk come from the design direactions generated based on the problem space. They are helping students find study spots which meet their requirements quicker and letting students reserve instant-approved rooms in CULC. Based on the two functions, I drew the ideal work flow. I referred to the result of task analysis time to time and simplified it.</p>
@@ -269,10 +272,14 @@
    <div class="container culc">
 
          <div class="offset-by-one ten columns">
+          <h3>Exploration</h3>
+           <p>At last we hoped to prototype Culc Pal and evaluate it. And the prototyping method we chose was HTML5, CSS and JavaScript. So during the design, I had to communicate with my teammate time to time, who acted as the front-end developer, to make sure my designs are feasible.</p>
+           <img src="images/cpsketch.png" class="u-full-width img_padding_small">
+           <p>During the experiment, I found that a real heat map is not appropriate in our context.</p>
           <h3>Low-fidelity Wireframes</h3>
-           <p>Later on, I designed the interface based on the user experience flow, which could let students complete their tasks easily.</p><br>
+           <p>Later on, I designed the interface based on the user experience flow, which could let students complete their tasks easily.</p>
           <h3>Final Design</h3>
-           <p>Later on, I designed the interface based on the user experience flow, which could let students complete their tasks easily.</p><br>
+           <p>Later on, I designed the interface based on the user experience flow, which could let students complete their tasks easily.</p>
          </div>
     </div>
 
@@ -442,6 +449,19 @@
     });
 </script>
 
+<script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slideToScroll:3,
+        adaptiveHeight: true,
+      });
+    });
+  </script>
 
 </body>
 </html>
