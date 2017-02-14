@@ -405,10 +405,14 @@ ul a {
   transition: all 250ms ease-out;
 }
 
+.btn2 {
+  background-color: #00ACE3;
+}
+
 .btn:before, .btn:after {
   content: "";
   position: absolute;
-  z-index: -2;
+  z-index: 2;
   transition: all 250ms ease-out;
 }
 
@@ -779,6 +783,19 @@ nav a:hover {
 	display: flex;
 	padding-top: 35px;
 	width: 100%;
+}
+
+.card{
+  box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
 }
 
 /*preview===================*/
