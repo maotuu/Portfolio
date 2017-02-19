@@ -71,6 +71,7 @@
         <li id="s5"><a href="#" data-scroll="s5">EVALUATION</a></li>
       </ul>
     <div class="line" style="margin-top: 3px;"></div>
+    <div class="section6"></div>
   </div>
 
 <div class="wrapper">
@@ -419,13 +420,14 @@
 
 <!-- Sticky nav -->
 <script>
+    var top6 = $(".section6").offset().top - 54;
     var  mn = $("#nav");
     intro = $(".wrapper");
     mns = "main-nav-scrolled";
     fix = "sticky_fix";
 
     $(window).scroll(function() {
-        if( $(this).scrollTop() > 640 ) {
+        if( $(this).scrollTop() > top6 ) {
             mn.addClass(mns);
             intro.addClass(fix);
         } else {
@@ -434,6 +436,7 @@
         }
     });
 </script>
+
 
 <!-- Change active nav item on scroll -->
 <script>

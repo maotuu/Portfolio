@@ -454,13 +454,14 @@
 
 <!-- Sticky nav -->
 <script>
+    var top6 = $(".section6").offset().top - 54;
     var  mn = $("#nav");
     intro = $(".wrapper");
     mns = "main-nav-scrolled";
     fix = "sticky_fix";
 
     $(window).scroll(function() {
-        if( $(this).scrollTop() > 710 ) {
+        if( $(this).scrollTop() > top6 ) {
             mn.addClass(mns);
             intro.addClass(fix);
         } else {
@@ -469,6 +470,7 @@
         }
     });
 </script>
+
 
 <!-- Change active nav item on scroll -->
 <script>
