@@ -323,6 +323,12 @@
 <!-- Sticky nav -->
 <script>
     var top6 = $(".section6").offset().top - 54;
+
+    $(window).load(function() {
+      top6 = $(".section6").offset().top - 54;
+    });
+    
+    
     var  mn = $("#nav");
     intro = $(".wrapper");
     mns = "main-nav-scrolled";
