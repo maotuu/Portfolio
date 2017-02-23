@@ -996,7 +996,7 @@ nav a:hover {
 	font-size: 30px;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 90px;
 	margin-bottom: 15px;
 }
 
@@ -1270,6 +1270,14 @@ nav a:hover {
   float: left;
 }
 
+.project-all {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  color: #ffffff;
+  float: left;
+}
+
 .project-next {
   text-align: right;
   height: 100px;
@@ -1278,7 +1286,7 @@ nav a:hover {
   padding-right: 14%;
   float: left;
 }
-
+.project-all p,
 .project-next p,
 .project-prev p {
   color: #ffffff;
