@@ -532,7 +532,7 @@ color: #ff2851;
 
 #work4 img{
     display: block;
-    width: 90%;
+    width: 75%;
     margin: auto;
 }
 
@@ -561,6 +561,20 @@ color: #ff2851;
     width: 100%;
     height: auto;
 }
+
+#work7{
+     width: 100%;
+     height: auto;
+     background-color: rgb(0,53,95);
+     color: #4a4a4a;
+}
+
+#work7 img{
+    display: block;
+    width: 40%;
+    margin:auto;
+}
+
 .profile-img{
 	width: 250px;
 }
@@ -972,6 +986,18 @@ nav a:hover {
 #nav-apsara:hover {
   background-color: #01579B;
 }
+
+#nav-expedia {
+  background-color: #284D6D;
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out;
+}
+#nav-expedia:hover {
+  background-color: rgb(0,53,95);
+}
+
 /* #Scroll to top icon
 ================================================== */
 
