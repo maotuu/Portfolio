@@ -343,33 +343,6 @@ ul a {
 
 }
 
-
-.right-container{
-     width: 80%;
-     margin: auto;
-}
-
-#about{
-     background-color: #282828;
-}
-
-#right {
-  overflow: visible;
-  width: 65%;
-  margin-left: 35%;
-  float: none;
-  clear: none;
-}
-
-#right a{
-     text-decoration: none;
-}
-
-#right a:hover h1{
-     opacity: 1;
-}
-
-
 .btn {
   position: relative;
   display: block;
@@ -416,144 +389,6 @@ ul a {
 color: #ff2851;
 }
 
-.work h1{
-  margin-left: 40px;
-  margin-bottom: 10px;
-  opacity: 0;
-  color: #ffffff;
-  font-family: Open Sans;
-  font-size: 14px;
-  line-height: 12px;     
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.work h2{
-  margin-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.work h3{
-  margin-left: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-@media (max-width: 1160px) {
-
-.work h1{
-  margin-left: 8%;
-  padding-right: 8%;
-}
-
-.work h2{
-  margin-left: 8%;
-}
-
-.work h3{
-  margin-left: 8%;
-}
-
-}
-
-#work1{
-     width: 100%;
-     height: auto;
-     background-color: #84BDFF;
-     color: #4a4a4a;
-}
-
-#work1 img{
-    display: block;
-    width: 22%;
-    margin:auto;
-}
-
-#work2{
-     width: 100%;
-     height: auto;
-     background-image: url('../images/work2bg.jpg');
-     background-color: #000000;
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-}
-
-#work2 img{
-    display: block;
-    width: 40%;
-    margin:auto;
-}
-
-#work3{
-     width: 100%;
-     height: auto;
-     background-color: #80CBC4;
-}
-
-#work3 img{
-    display: block;
-    width: 70%;
-    margin:auto;
-}
-
-#work4{
-     width: 100%;
-     height: auto;
-     background-color: #00ACE3;
-}
-
-#work4 img{
-    display: block;
-    width: 75%;
-    margin: auto;
-}
-
-#work5{
-     width: 100%;
-     height: auto;
-     background-image: url(../images/5.png);
-     background-size: cover;
-}
-
-#work5 img{
-    display: block;
-    width: 70%;
-    margin:auto;
-}
-
-#work6{
-     width: 100%;
-     height: auto;
-     background-image: url(../images/previewgd2.png);
-     background-size: cover;
-}
-
-#work6 img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-#workexpedia{
-     width: 100%;
-     height: auto;
-     background-color: rgb(0,53,95);
-}
-
-#workexpedia img{
-    display: block;
-    width: 40%;
-    margin:auto;
-}
 
 .profile-img{
 	width: 250px;
@@ -593,22 +428,6 @@ color: #ff2851;
      padding-right:15px;
 }
 
-#about p{
-     font-size: 15px;
-     color: #AAAAAA;
-}
-
-#about a{
-     color: #eaeaea;
-}
-
-#about a:hover{
-     color: #ff2851;
-}
-
-#about b{
-     color: #eaeaea;
-}
 
 #footer-p {
      height: 100px;
@@ -673,24 +492,6 @@ color: #ff2851;
      font-size: 10px;
 	}
 
-	.work h1{
-	  font-size: 10px;
-	  padding-top: 20px;
-	  padding-right: 10px;
-	}
-
-	.work h2{
-	  font-size: 12px;
-	}
-
-	.spacerr{
-		height: 130px;
-	}
-
-	.work h3{
-	  font-size: 10px;
-	  padding-bottom: 20px;
-	}
 }
 
 /* index end */
