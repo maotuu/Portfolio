@@ -306,7 +306,7 @@ ul a {
 /* index */
 
 #left{
-     width:35%;
+     width:100%;
      height:100%;
      left: 0px;
      top: 0px;
@@ -349,10 +349,6 @@ ul a {
      margin: auto;
 }
 
-#about{
-     background-color: #282828;
-}
-
 #right {
   overflow: visible;
   width: 65%;
@@ -370,23 +366,6 @@ ul a {
 }
 
 @media (max-width: 1200px) {
-
-#left{
-     width:100%;
-     height:750px;
-     position:static;
-}
-
-#right{
-     width:100%;
-     margin-left: 0;
-     float: none;
-     clear: none;
-}
-
-#particles-js{  
-     height: 750px;
-}
 
 }
 
@@ -655,18 +634,6 @@ color: #ff2851;
 }
 
 @media (max-width: 480px) {
-	#left{
-	     width:100%;
-	     height:600px; 
-	}
-
-	#particles-js{  
-	     height: 600px;
-	}
-
-	.left-container{
-		right: 10%;
-	}
 
 	.left-container h1{
 		font-size: 20px;
