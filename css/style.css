@@ -306,7 +306,7 @@ ul a {
 /* index */
 
 #left{
-     width:35%;
+     width:100%;
      height:100%;
      left: 0px;
      top: 0px;
@@ -343,56 +343,6 @@ ul a {
 
 }
 
-<<<<<<< Updated upstream:css/style.css
-=======
-
-.right-container{
-     width: 80%;
-     margin: auto;
-}
-
-#about{
-     background-color: #282828;
-}
-
-#right {
-  overflow: visible;
-  width: 65%;
-  margin-left: 35%;
-  float: none;
-  clear: none;
-}
-
-#right a{
-     text-decoration: none;
-}
-
-#right a:hover h1{
-     opacity: 1;
-}
-
-@media (max-width: 1200px) {
-
-#left{
-     width:100%;
-     height:750px;
-     position:static;
-}
-
-#right{
-     width:100%;
-     margin-left: 0;
-     float: none;
-     clear: none;
-}
-
-#particles-js{  
-     height: 750px;
-}
-
-}
-
->>>>>>> Stashed changes:css/style.css
 .btn {
   position: relative;
   display: block;
@@ -505,18 +455,6 @@ color: #ff2851;
 }
 
 @media (max-width: 480px) {
-<<<<<<< Updated upstream:css/style.css
-=======
-	#left{
-	     width:100%;
-	     height:600px; 
-	}
-
-	#particles-js{  
-	     height: 600px;
-	}
-
->>>>>>> Stashed changes:css/style.css
 	.left-container{
 		right: 10%;
 	}
