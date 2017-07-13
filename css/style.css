@@ -343,7 +343,6 @@ ul a {
 
 }
 
-
 .right-container{
      width: 80%;
      margin: auto;
@@ -1679,9 +1678,29 @@ html {
 		right:5px;
 	}
 
+  .profile-img{
+    display: none;
+
 }
 
 /* #Small Devices */
 @media only screen and (max-width: 750px) {
+
+}
+
+@media (max-height: 800px) {
+
+.sociallinks{
+     padding-top: 30px;
+     z-index: 1;
+}
+
+.left-container{
+     bottom: 5%;
+}
+
+.profile-img{
+  width: 180px;
+}
 
 }
