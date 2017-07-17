@@ -737,6 +737,13 @@ color: #ff2851;
 
 }
 
+@media (max-height: 670px) {
+
+  .profile-img{
+    display: none;
+  }
+
+}
 /* index end */
 
 .margin_bottom {
