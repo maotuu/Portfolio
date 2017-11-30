@@ -103,9 +103,10 @@ iframe {
 
 p {
 	color: #5f5f5f;
-/*    font-family: HelveticaNeue;*/
+    font-family: Open Sans;
     font-size: 16px;
     line-height: 28px;
+    letter-spacing: 0.2px;
     display: block;
 
 }
